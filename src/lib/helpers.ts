@@ -53,6 +53,25 @@ export function getAllSectionIds(): string[] {
   return ids;
 }
 
+export function getSectionName(sectionId: string): string {
+  for (const group of SPECIALIST_GROUPS) {
+    const allSections = group.subgroups
+      ? group.subgroups.flatMap((sg) => sg.sections)
+      : group.sections ?? [];
+    const found = allSections.find((s) => s.id === sectionId);
+    if (found) return found.name;
+  }
+  return sectionId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/** Converts "YYYY-MM-DD" to "DD/MM/YYYY". Returns the input unchanged if it doesn't match. */
+export function formatDate(date: string | undefined): string {
+  if (!date) return "";
+  const [y, m, d] = date.split("-");
+  if (!y || !m || !d) return date;
+  return `${d}/${m}/${y}`;
+}
+
 export function getCountryFlag(code: string): string {
   const flags: Record<string, string> = {
     IE: "IE",
