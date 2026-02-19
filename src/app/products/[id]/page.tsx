@@ -160,7 +160,7 @@ export default function ProductPage({
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
               <div>
-                <span className="text-muted">Project Owner:</span>{" "}
+                <span className="text-muted">Programme Owner:</span>{" "}
                 <span className="font-medium text-foreground">{product.projectOwner}</span>
               </div>
               <div>

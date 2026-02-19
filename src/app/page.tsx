@@ -231,7 +231,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center justify-between text-xs text-muted">
-                  <span>{product.projectOwner}</span>
+                  <span title="Programme Owner">{product.projectOwner}</span>
                   <span>
                     {displayCountries.join(", ")}
                     {extraCount > 0 && (
