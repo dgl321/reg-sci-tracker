@@ -5,9 +5,9 @@ import { RiskLevel, RISK_LEVEL_CONFIG } from "@/lib/types";
 const BAR_COLORS: Record<RiskLevel, string> = {
   "not-started": "bg-gray-300",
   pass: "bg-green-400",
-  "pass-with-mitigation": "bg-lime-400",
+  "pass-with-mitigation": "bg-lime-300",
   "data-required": "bg-yellow-400",
-  "refinement-needed": "bg-orange-400",
+  "refinement-needed": "bg-orange-600",
   fail: "bg-gray-900",
   critical: "bg-red-400",
 };
