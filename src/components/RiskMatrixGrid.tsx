@@ -8,14 +8,15 @@ import {
   RISK_LEVEL_CONFIG,
   RiskLevel,
 } from "@/lib/types";
+import { formatDate } from "@/lib/helpers";
 
 const TILE_BG: Record<RiskLevel, string> = {
-  "not-started": "bg-gray-50 border-gray-200",
-  pass: "bg-green-50 border-green-300",
-  "pass-with-mitigation": "bg-lime-50 border-lime-300",
-  "refinement-needed": "bg-amber-50 border-amber-300",
-  fail: "bg-red-50 border-red-300",
-  critical: "bg-red-100 border-red-500",
+  "not-started": "bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700",
+  pass: "bg-green-50 dark:bg-green-900/30 border-green-300 dark:border-green-700",
+  "pass-with-mitigation": "bg-lime-50 dark:bg-lime-900/30 border-lime-300 dark:border-lime-700",
+  "refinement-needed": "bg-amber-50 dark:bg-amber-900/30 border-amber-300 dark:border-amber-700",
+  fail: "bg-red-50 dark:bg-red-900/30 border-red-300 dark:border-red-700",
+  critical: "bg-red-100 dark:bg-red-900/50 border-red-500 dark:border-red-600",
 };
 
 const TILE_DOT: Record<RiskLevel, string> = {
@@ -46,7 +47,8 @@ function SectionTile({
   return (
     <button
       onClick={onEdit}
-      className={`relative text-left p-3 rounded-lg border-2 ${TILE_BG[level]} hover:shadow-md transition-all w-full`}
+      title={name}
+      className={`relative text-left p-3 rounded-lg border-2 ${TILE_BG[level]} hover:shadow-md transition-all w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
     >
       <div className="flex items-center gap-2 mb-1">
         <div className={`w-2.5 h-2.5 rounded-full ${TILE_DOT[level]}`} />
@@ -54,7 +56,7 @@ function SectionTile({
           {shortName || name}
         </span>
         {shared && (
-          <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-600 font-medium">
+          <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-medium">
             Shared
           </span>
         )}
@@ -70,7 +72,7 @@ function SectionTile({
       {assessment?.assessor && (
         <p className="text-[10px] text-muted mt-1.5">
           {assessment.assessor}
-          {assessment.lastUpdated && ` - ${assessment.lastUpdated}`}
+          {assessment.lastUpdated && ` - ${formatDate(assessment.lastUpdated)}`}
         </p>
       )}
     </button>
@@ -107,9 +109,12 @@ function SectionDetail({
             </div>
             <button
               onClick={onClose}
-              className="text-muted hover:text-foreground text-xl leading-none"
+              aria-label="Close"
+              className="text-muted hover:text-foreground p-1 rounded-md hover:bg-border/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
-              x
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
           </div>
 
@@ -131,7 +136,7 @@ function SectionDetail({
                     {Object.entries(assessment.details).map(([key, value]) => (
                       <div
                         key={key}
-                        className="bg-gray-50 rounded-lg px-3 py-2"
+                        className="bg-background rounded-lg px-3 py-2"
                       >
                         <p className="text-[11px] text-muted">{key}</p>
                         <p className="text-sm font-medium text-foreground">
@@ -147,7 +152,7 @@ function SectionDetail({
                 <span>Assessed by: {assessment.assessor || "Unassigned"}</span>
                 <span>
                   Updated:{" "}
-                  {assessment.lastUpdated || "N/A"}
+                  {formatDate(assessment.lastUpdated) || "N/A"}
                 </span>
               </div>
             </>
@@ -166,7 +171,7 @@ function SectionDetail({
             </button>
             <button
               onClick={onClose}
-              className="px-4 py-2 border border-border rounded-lg text-sm font-medium text-muted hover:bg-gray-50 transition"
+              className="px-4 py-2 border border-border rounded-lg text-sm font-medium text-muted hover:bg-background transition"
             >
               Close
             </button>
@@ -203,7 +208,7 @@ export default function RiskMatrixGrid({
             key={group.id}
             className="bg-card border border-border rounded-xl overflow-hidden"
           >
-            <div className="px-5 py-3 bg-gray-50 border-b border-border">
+            <div className="px-5 py-3 bg-background border-b border-border">
               <h3 className="font-semibold text-foreground">{group.name}</h3>
             </div>
             <div className="p-5">

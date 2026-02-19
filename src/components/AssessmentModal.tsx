@@ -124,8 +124,35 @@ export default function AssessmentModal({
   const [details, setDetails] = useState<Record<string, string | number>>(
     (assessment?.details as Record<string, string | number>) || {}
   );
+  const [isDirty, setIsDirty] = useState(false);
 
   const fields = SECTION_FIELDS[sectionId] || DEFAULT_FIELDS;
+
+  function markDirty() {
+    if (!isDirty) setIsDirty(true);
+  }
+
+  function handleRiskChange(level: RiskLevel) {
+    setRiskLevel(level);
+    markDirty();
+  }
+
+  function handleSummaryChange(val: string) {
+    setSummary(val);
+    markDirty();
+  }
+
+  function handleAssessorChange(val: string) {
+    setAssessor(val);
+    markDirty();
+  }
+
+  function handleClose() {
+    if (isDirty) {
+      if (!window.confirm("You have unsaved changes. Discard them?")) return;
+    }
+    onClose();
+  }
 
   function handleSave() {
     onSave({
@@ -141,6 +168,7 @@ export default function AssessmentModal({
 
   function updateDetail(key: string, value: string | number) {
     setDetails((prev) => ({ ...prev, [key]: value }));
+    markDirty();
   }
 
   return (
@@ -156,10 +184,13 @@ export default function AssessmentModal({
               <p className="text-sm text-muted">Edit risk assessment</p>
             </div>
             <button
-              onClick={onClose}
-              className="text-muted hover:text-foreground text-xl leading-none"
+              onClick={handleClose}
+              aria-label="Close"
+              className="text-muted hover:text-foreground p-1 rounded-md hover:bg-border/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
-              x
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
           </div>
 
@@ -175,15 +206,15 @@ export default function AssessmentModal({
                 return (
                   <button
                     key={level}
-                    onClick={() => setRiskLevel(level)}
-                    className={`flex items-center gap-2 px-3 py-2 rounded-lg border-2 text-sm font-medium transition-all ${
+                    onClick={() => handleRiskChange(level)}
+                    className={`flex items-center gap-2 px-3 py-2 rounded-lg border-2 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1 ${
                       selected
                         ? `${cfg.bgColor} ${cfg.borderColor} ${cfg.color}`
-                        : "bg-gray-50 border-gray-200 text-muted hover:bg-gray-100"
+                        : "bg-background border-border text-muted hover:bg-border/30"
                     }`}
                   >
                     <div
-                      className={`w-3 h-3 rounded-full ${RISK_OPTION_DOT[level]}`}
+                      className={`w-3 h-3 rounded-full shrink-0 ${RISK_OPTION_DOT[level]}`}
                     />
                     {cfg.label}
                   </button>
@@ -200,9 +231,9 @@ export default function AssessmentModal({
             <input
               type="text"
               value={assessor}
-              onChange={(e) => setAssessor(e.target.value)}
+              onChange={(e) => handleAssessorChange(e.target.value)}
               placeholder="Your name"
-              className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -229,13 +260,13 @@ export default function AssessmentModal({
                       onChange={(e) => updateDetail(field.key, e.target.value)}
                       placeholder={field.placeholder}
                       rows={3}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   ) : field.type === "select" ? (
                     <select
                       value={(details[field.key] as string) || ""}
                       onChange={(e) => updateDetail(field.key, e.target.value)}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       <option value="">Select...</option>
                       {field.options?.map((opt) => (
@@ -257,7 +288,7 @@ export default function AssessmentModal({
                         )
                       }
                       placeholder={field.placeholder}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   )}
                 </div>
@@ -272,27 +303,37 @@ export default function AssessmentModal({
             </label>
             <textarea
               value={summary}
-              onChange={(e) => setSummary(e.target.value)}
+              onChange={(e) => handleSummaryChange(e.target.value)}
               placeholder="Summarise the risk assessment outcome and any recommendations..."
               rows={4}
-              className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           {/* Actions */}
-          <div className="flex gap-2 justify-end">
-            <button
-              onClick={onClose}
-              className="px-4 py-2 border border-border rounded-lg text-sm font-medium text-muted hover:bg-gray-50 transition"
-            >
-              Cancel
-            </button>
-            <button
-              onClick={handleSave}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
-            >
-              Save Assessment
-            </button>
+          <div className="flex items-center justify-between">
+            {isDirty ? (
+              <span className="flex items-center gap-1.5 text-xs text-amber-600">
+                <span className="w-2 h-2 rounded-full bg-amber-500 inline-block" />
+                Unsaved changes
+              </span>
+            ) : (
+              <span />
+            )}
+            <div className="flex gap-2">
+              <button
+                onClick={handleClose}
+                className="px-4 py-2 border border-border rounded-lg text-sm font-medium text-muted hover:bg-border/30 transition"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSave}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
+              >
+                Save Assessment
+              </button>
+            </div>
           </div>
         </div>
       </div>
