@@ -273,7 +273,67 @@ export default function ProductPage({
             <span className="text-sm text-muted">Overall Assessment:</span>
             <RiskBadge level={overall} size="md" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+
+          {/* Conclusions / Findings */}
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-sm font-medium text-foreground">
+                Conclusions / Findings
+              </h4>
+              {!editingConclusion && (
+                <button
+                  onClick={handleStartEditConclusion}
+                  className="text-xs text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 0 1 2.828 2.828L11.828 15.828a2 2 0 0 1-1.414.586H9v-2.414a2 2 0 0 1 .586-1.414z" />
+                  </svg>
+                  {product.conclusion ? "Edit" : "Add findings"}
+                </button>
+              )}
+            </div>
+
+            {editingConclusion ? (
+              <div className="space-y-2">
+                <textarea
+                  ref={conclusionRef}
+                  value={conclusionDraft}
+                  onChange={(e) => setConclusionDraft(e.target.value)}
+                  placeholder="Enter overall conclusions, findings, or regulatory narrative for this product..."
+                  rows={5}
+                  className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+                />
+                <div className="flex gap-2">
+                  <button
+                    onClick={handleSaveConclusion}
+                    className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
+                  >
+                    Save
+                  </button>
+                  <button
+                    onClick={handleCancelConclusion}
+                    className="px-4 py-1.5 border border-border rounded-lg text-sm font-medium text-muted hover:bg-background transition"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ) : product.conclusion ? (
+              <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
+                {product.conclusion}
+              </p>
+            ) : (
+              <button
+                onClick={handleStartEditConclusion}
+                className="w-full text-left px-4 py-3 rounded-lg border border-dashed border-border text-sm text-muted hover:border-blue-400 hover:text-blue-500 transition-colors"
+              >
+                + Click to add conclusions or findings for this product...
+              </button>
+            )}
+          </div>
+
+          {/* Key Concerns & Pending */}
+          <div className="border-t border-border pt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <h4 className="text-sm font-medium text-foreground mb-2">
                 Key Concerns
@@ -339,64 +399,6 @@ export default function ProductPage({
                 )}
               </ul>
             </div>
-          </div>
-
-          {/* Conclusions / Findings */}
-          <div className="border-t border-border pt-5">
-            <div className="flex items-center justify-between mb-2">
-              <h4 className="text-sm font-medium text-foreground">
-                Conclusions / Findings
-              </h4>
-              {!editingConclusion && (
-                <button
-                  onClick={handleStartEditConclusion}
-                  className="text-xs text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
-                >
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 13l6.586-6.586a2 2 0 0 1 2.828 2.828L11.828 15.828a2 2 0 0 1-1.414.586H9v-2.414a2 2 0 0 1 .586-1.414z" />
-                  </svg>
-                  {product.conclusion ? "Edit" : "Add findings"}
-                </button>
-              )}
-            </div>
-
-            {editingConclusion ? (
-              <div className="space-y-2">
-                <textarea
-                  ref={conclusionRef}
-                  value={conclusionDraft}
-                  onChange={(e) => setConclusionDraft(e.target.value)}
-                  placeholder="Enter overall conclusions, findings, or regulatory narrative for this product..."
-                  rows={5}
-                  className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
-                />
-                <div className="flex gap-2">
-                  <button
-                    onClick={handleSaveConclusion}
-                    className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
-                  >
-                    Save
-                  </button>
-                  <button
-                    onClick={handleCancelConclusion}
-                    className="px-4 py-1.5 border border-border rounded-lg text-sm font-medium text-muted hover:bg-background transition"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            ) : product.conclusion ? (
-              <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
-                {product.conclusion}
-              </p>
-            ) : (
-              <button
-                onClick={handleStartEditConclusion}
-                className="w-full text-left px-4 py-3 rounded-lg border border-dashed border-border text-sm text-muted hover:border-blue-400 hover:text-blue-500 transition-colors"
-              >
-                + Click to add conclusions or findings for this product...
-              </button>
-            )}
           </div>
         </div>
       )}
