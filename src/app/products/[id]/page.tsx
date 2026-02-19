@@ -364,10 +364,10 @@ export default function ProductPage({
                     <li key={a.sectionId} className="flex items-start gap-2 text-sm">
                       <div
                         className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${a.riskLevel === "critical"
-                            ? "bg-red-800"
+                            ? "bg-red-400"
                             : a.riskLevel === "fail"
-                              ? "bg-red-500"
-                              : "bg-amber-500"
+                              ? "bg-gray-900"
+                              : "bg-amber-400"
                           }`}
                       />
                       <div>

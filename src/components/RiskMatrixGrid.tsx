@@ -14,18 +14,20 @@ const TILE_BG: Record<RiskLevel, string> = {
   "not-started": "bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700",
   pass: "bg-green-50 dark:bg-green-900/30 border-green-300 dark:border-green-700",
   "pass-with-mitigation": "bg-lime-50 dark:bg-lime-900/30 border-lime-300 dark:border-lime-700",
-  "refinement-needed": "bg-amber-50 dark:bg-amber-900/30 border-amber-300 dark:border-amber-700",
-  fail: "bg-red-50 dark:bg-red-900/30 border-red-300 dark:border-red-700",
-  critical: "bg-red-100 dark:bg-red-900/50 border-red-500 dark:border-red-600",
+  "data-required": "bg-yellow-50 dark:bg-yellow-900/30 border-yellow-300 dark:border-yellow-700",
+  "refinement-needed": "bg-orange-50 dark:bg-orange-900/30 border-orange-300 dark:border-orange-700",
+  critical: "bg-red-50 dark:bg-red-900/30 border-red-300 dark:border-red-700",
+  fail: "bg-gray-100 dark:bg-gray-800 border-gray-500 dark:border-gray-600",
 };
 
 const TILE_DOT: Record<RiskLevel, string> = {
   "not-started": "bg-gray-300",
-  pass: "bg-green-500",
-  "pass-with-mitigation": "bg-lime-500",
-  "refinement-needed": "bg-amber-500",
-  fail: "bg-red-500",
-  critical: "bg-red-800",
+  pass: "bg-green-400",
+  "pass-with-mitigation": "bg-lime-400",
+  "data-required": "bg-yellow-400",
+  "refinement-needed": "bg-orange-400",
+  fail: "bg-gray-900",
+  critical: "bg-red-400",
 };
 
 function SectionTile({

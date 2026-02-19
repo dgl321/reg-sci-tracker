@@ -3,6 +3,7 @@ export type RiskLevel =
   | "not-started"
   | "pass"
   | "pass-with-mitigation"
+  | "data-required"
   | "refinement-needed"
   | "fail"
   | "critical";
@@ -29,23 +30,29 @@ export const RISK_LEVEL_CONFIG: Record<
     bgColor: "bg-lime-100 dark:bg-lime-900/50",
     borderColor: "border-lime-400 dark:border-lime-600",
   },
+  "data-required": {
+    label: "Data Required",
+    color: "text-yellow-700 dark:text-yellow-400",
+    bgColor: "bg-yellow-100 dark:bg-yellow-900/50",
+    borderColor: "border-yellow-400 dark:border-yellow-600",
+  },
   "refinement-needed": {
-    label: "Refinement Needed",
-    color: "text-amber-700 dark:text-amber-400",
-    bgColor: "bg-amber-100 dark:bg-amber-900/50",
-    borderColor: "border-amber-400 dark:border-amber-600",
+    label: "Refinement",
+    color: "text-orange-700 dark:text-orange-400",
+    bgColor: "bg-orange-100 dark:bg-orange-900/50",
+    borderColor: "border-orange-400 dark:border-orange-600",
   },
   fail: {
     label: "Fail",
-    color: "text-red-700 dark:text-red-400",
-    bgColor: "bg-red-100 dark:bg-red-900/50",
-    borderColor: "border-red-400 dark:border-red-600",
+    color: "text-white dark:text-white",
+    bgColor: "bg-gray-900 dark:bg-gray-950",
+    borderColor: "border-gray-800 dark:border-gray-700",
   },
   critical: {
     label: "Critical",
-    color: "text-red-900 dark:text-red-300",
-    bgColor: "bg-red-200 dark:bg-red-900/70",
-    borderColor: "border-red-600 dark:border-red-500",
+    color: "text-red-700 dark:text-red-400",
+    bgColor: "bg-red-100 dark:bg-red-900/50",
+    borderColor: "border-red-400 dark:border-red-600",
   },
 };
 

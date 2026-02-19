@@ -4,11 +4,12 @@ import { RiskLevel, RISK_LEVEL_CONFIG } from "@/lib/types";
 
 const BAR_COLORS: Record<RiskLevel, string> = {
   "not-started": "bg-gray-300",
-  pass: "bg-green-500",
+  pass: "bg-green-400",
   "pass-with-mitigation": "bg-lime-400",
-  "refinement-needed": "bg-amber-400",
-  fail: "bg-red-500",
-  critical: "bg-red-800",
+  "data-required": "bg-yellow-400",
+  "refinement-needed": "bg-orange-400",
+  fail: "bg-gray-900",
+  critical: "bg-red-400",
 };
 
 export default function RiskSummaryBar({
@@ -21,9 +22,10 @@ export default function RiskSummaryBar({
   showLegend?: boolean;
 }) {
   const order: RiskLevel[] = [
-    "critical",
     "fail",
+    "critical",
     "refinement-needed",
+    "data-required",
     "pass-with-mitigation",
     "pass",
     "not-started",

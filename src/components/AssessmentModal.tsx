@@ -12,18 +12,20 @@ const RISK_OPTIONS: RiskLevel[] = [
   "not-started",
   "pass",
   "pass-with-mitigation",
+  "data-required",
   "refinement-needed",
-  "fail",
   "critical",
+  "fail",
 ];
 
 const RISK_OPTION_DOT: Record<RiskLevel, string> = {
   "not-started": "bg-gray-300",
-  pass: "bg-green-500",
-  "pass-with-mitigation": "bg-lime-500",
-  "refinement-needed": "bg-amber-500",
-  fail: "bg-red-500",
-  critical: "bg-red-800",
+  pass: "bg-green-400",
+  "pass-with-mitigation": "bg-lime-400",
+  "data-required": "bg-yellow-400",
+  "refinement-needed": "bg-orange-400",
+  critical: "bg-red-400",
+  fail: "bg-gray-900",
 };
 
 const NOTES_PLACEHOLDER = "Enter assessment notes...";
