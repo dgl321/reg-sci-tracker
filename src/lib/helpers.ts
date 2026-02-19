@@ -7,6 +7,7 @@ export function getRiskDistribution(
     "not-started": 0,
     pass: 0,
     "pass-with-mitigation": 0,
+    "data-required": 0,
     "refinement-needed": 0,
     fail: 0,
     critical: 0,
