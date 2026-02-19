@@ -31,7 +31,7 @@ export default function RiskSummaryBar({
 
   return (
     <div>
-      <div className="flex h-4 w-full rounded-full overflow-hidden bg-gray-100">
+      <div className="flex h-4 w-full rounded-full overflow-hidden bg-border/50">
         {order.map((level) => {
           const count = distribution[level];
           if (count === 0) return null;

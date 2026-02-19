@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider, ThemeToggle } from "@/components/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,19 +28,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b border-border bg-card">
-          <div className="mx-auto max-w-7xl px-4 py-3 flex items-center gap-3">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">RS</span>
+        <ThemeProvider>
+          <header className="sticky top-0 z-40 border-b border-border bg-card">
+            <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">RS</span>
+                </div>
+                <h1 className="text-lg font-semibold text-foreground">
+                  Reg Science Tracker
+                </h1>
               </div>
-              <h1 className="text-lg font-semibold text-foreground">
-                Reg Science Tracker
-              </h1>
+              <ThemeToggle />
             </div>
-          </div>
-        </header>
-        <main>{children}</main>
+          </header>
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -13,39 +13,39 @@ export const RISK_LEVEL_CONFIG: Record<
 > = {
   "not-started": {
     label: "Not Started",
-    color: "text-gray-500",
-    bgColor: "bg-gray-100",
-    borderColor: "border-gray-300",
+    color: "text-gray-500 dark:text-gray-400",
+    bgColor: "bg-gray-100 dark:bg-gray-700",
+    borderColor: "border-gray-300 dark:border-gray-600",
   },
   pass: {
     label: "Pass",
-    color: "text-green-700",
-    bgColor: "bg-green-100",
-    borderColor: "border-green-400",
+    color: "text-green-700 dark:text-green-400",
+    bgColor: "bg-green-100 dark:bg-green-900/50",
+    borderColor: "border-green-400 dark:border-green-600",
   },
   "pass-with-mitigation": {
     label: "Pass w/ Mitigation",
-    color: "text-lime-700",
-    bgColor: "bg-lime-100",
-    borderColor: "border-lime-400",
+    color: "text-lime-700 dark:text-lime-400",
+    bgColor: "bg-lime-100 dark:bg-lime-900/50",
+    borderColor: "border-lime-400 dark:border-lime-600",
   },
   "refinement-needed": {
     label: "Refinement Needed",
-    color: "text-amber-700",
-    bgColor: "bg-amber-100",
-    borderColor: "border-amber-400",
+    color: "text-amber-700 dark:text-amber-400",
+    bgColor: "bg-amber-100 dark:bg-amber-900/50",
+    borderColor: "border-amber-400 dark:border-amber-600",
   },
   fail: {
     label: "Fail",
-    color: "text-red-700",
-    bgColor: "bg-red-100",
-    borderColor: "border-red-400",
+    color: "text-red-700 dark:text-red-400",
+    bgColor: "bg-red-100 dark:bg-red-900/50",
+    borderColor: "border-red-400 dark:border-red-600",
   },
   critical: {
     label: "Critical",
-    color: "text-red-900",
-    bgColor: "bg-red-200",
-    borderColor: "border-red-600",
+    color: "text-red-900 dark:text-red-300",
+    bgColor: "bg-red-200 dark:bg-red-900/70",
+    borderColor: "border-red-600 dark:border-red-500",
   },
 };
 
@@ -76,8 +76,8 @@ export const SPECIALIST_GROUPS: SpecialistGroup[] = [
         id: "env-fate",
         name: "Environmental Fate",
         sections: [
-          { id: "aquatics", name: "Aquatics", shortName: "AQ" },
-          { id: "groundwater", name: "Groundwater", shortName: "GW" },
+          { id: "aquatics", name: "Aquatics", shortName: "Aquatics" },
+          { id: "groundwater", name: "Groundwater", shortName: "Groundwater" },
           { id: "soil", name: "Soil", shortName: "Soil" },
         ],
       },
@@ -85,11 +85,11 @@ export const SPECIALIST_GROUPS: SpecialistGroup[] = [
         id: "ecotox",
         name: "Ecotoxicology",
         sections: [
-          { id: "aquatics", name: "Aquatics", shortName: "AQ" },
+          { id: "aquatics", name: "Aquatics", shortName: "Aquatics" },
           { id: "bees", name: "Bees", shortName: "Bees" },
-          { id: "birds-mammals", name: "Birds & Mammals", shortName: "B&M" },
-          { id: "nta", name: "Non-Target Arthropods", shortName: "NTA" },
-          { id: "ntp", name: "Non-Target Plants", shortName: "NTP" },
+          { id: "birds-mammals", name: "Birds & Mammals", shortName: "Birds & Mammals" },
+          { id: "nta", name: "Non-Target Arthropods", shortName: "Non-Target Arthropods" },
+          { id: "ntp", name: "Non-Target Plants", shortName: "Non-Target Plants" },
         ],
       },
     ],
@@ -98,38 +98,38 @@ export const SPECIALIST_GROUPS: SpecialistGroup[] = [
     id: "toxicology",
     name: "Toxicology",
     sections: [
-      { id: "operator", name: "Operator", shortName: "Op" },
-      { id: "worker", name: "Worker", shortName: "Wk" },
-      { id: "resident-bystander", name: "Resident/Bystander", shortName: "R/B" },
-      { id: "classification", name: "Classification", shortName: "Class" },
-      { id: "gw-metabolites", name: "Relevant GW Metabolites", shortName: "GW Met" },
+      { id: "operator", name: "Operator", shortName: "Operator" },
+      { id: "worker", name: "Worker", shortName: "Worker" },
+      { id: "resident-bystander", name: "Resident/Bystander", shortName: "Resident/Bystander" },
+      { id: "classification", name: "Classification", shortName: "Classification" },
+      { id: "gw-metabolites", name: "Relevant GW Metabolites", shortName: "Relevant GW Metabolites" },
     ],
   },
   {
     id: "analytical",
     name: "Analytical Methods",
     sections: [
-      { id: "validation", name: "Validation", shortName: "Val" },
+      { id: "validation", name: "Validation", shortName: "Validation" },
     ],
   },
   {
     id: "residues",
     name: "Residues",
     sections: [
-      { id: "residue-studies", name: "Residue Studies", shortName: "Studies" },
-      { id: "consumer-chronic", name: "Consumer Risk Chronic", shortName: "Chronic" },
-      { id: "consumer-acute", name: "Consumer Risk Acute", shortName: "Acute" },
-      { id: "combined-risk", name: "Combined Risk", shortName: "Combined" },
+      { id: "residue-studies", name: "Residue Studies", shortName: "Residue Studies" },
+      { id: "consumer-chronic", name: "Consumer Risk Chronic", shortName: "Consumer Risk Chronic" },
+      { id: "consumer-acute", name: "Consumer Risk Acute", shortName: "Consumer Risk Acute" },
+      { id: "combined-risk", name: "Combined Risk", shortName: "Combined Risk" },
     ],
   },
   {
     id: "efficacy",
     name: "Efficacy",
     sections: [
-      { id: "field-trials", name: "Field Trials", shortName: "Trials" },
+      { id: "field-trials", name: "Efficacy Trials", shortName: "Efficacy Trials" },
       { id: "bad", name: "Biological Assessment Dossier", shortName: "BAD" },
-      { id: "effectiveness", name: "Effectiveness", shortName: "Effect" },
-      { id: "resistance", name: "Resistance", shortName: "Resist" },
+      { id: "effectiveness", name: "Effectiveness", shortName: "Effectiveness" },
+      { id: "resistance", name: "Resistance", shortName: "Resistance" },
     ],
   },
 ];
@@ -163,4 +163,5 @@ export interface Product {
   euApprovalStatus: ApprovalStatus;
   euExpiryDate?: string;
   assessments: SectionAssessment[];
+  conclusion?: string;
 }
