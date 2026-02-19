@@ -163,4 +163,5 @@ export interface Product {
   euApprovalStatus: ApprovalStatus;
   euExpiryDate?: string;
   assessments: SectionAssessment[];
+  conclusion?: string;
 }
