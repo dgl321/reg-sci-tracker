@@ -172,11 +172,12 @@ export default function Home() {
             const dist = getRiskDistribution(product);
             const overall = getOverallRisk(product);
             const completion = getCompletionPercentage(product);
+            const countryCodes = product.countries.map((c) => c.countryCode);
             const displayCountries =
-              product.countries.length > 3
-                ? product.countries.slice(0, 3)
-                : product.countries;
-            const extraCount = product.countries.length - 3;
+              countryCodes.length > 3
+                ? countryCodes.slice(0, 3)
+                : countryCodes;
+            const extraCount = countryCodes.length - 3;
 
             return (
               <Link

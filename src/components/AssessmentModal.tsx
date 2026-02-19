@@ -5,6 +5,7 @@ import {
   RiskLevel,
   RISK_LEVEL_CONFIG,
   SectionAssessment,
+  CountryUse,
 } from "@/lib/types";
 
 const RISK_OPTIONS: RiskLevel[] = [
@@ -25,94 +26,20 @@ const RISK_OPTION_DOT: Record<RiskLevel, string> = {
   critical: "bg-red-800",
 };
 
-// Section-specific field definitions
-interface FieldDef {
-  key: string;
-  label: string;
-  type: "text" | "number" | "select" | "textarea";
-  options?: string[];
-  placeholder?: string;
-  unit?: string;
-}
-
-const SECTION_FIELDS: Record<string, FieldDef[]> = {
-  aquatics: [
-    { key: "ter_fish_t1", label: "TER Fish (Tier 1)", type: "number", placeholder: "e.g. 12.5" },
-    { key: "ter_daphnia_t1", label: "TER Daphnia (Tier 1)", type: "number", placeholder: "e.g. 105" },
-    { key: "ter_algae_t1", label: "TER Algae (Tier 1)", type: "number", placeholder: "e.g. 250" },
-    { key: "focus_step", label: "FOCUS Step Required", type: "select", options: ["None", "Step 1", "Step 2", "Step 3", "Step 4"] },
-    { key: "buffer_zone", label: "Buffer Zone", type: "text", placeholder: "e.g. 20m" },
-    { key: "mitigation", label: "Mitigation Measures", type: "textarea", placeholder: "SPe statements, drift reduction, etc." },
-  ],
-  groundwater: [
-    { key: "parent_pec", label: "Parent PEC GW (ug/L)", type: "number", placeholder: "e.g. 0.05" },
-    { key: "metabolite_name", label: "Key Metabolite", type: "text", placeholder: "e.g. M700F007" },
-    { key: "metabolite_pec", label: "Metabolite PEC GW (ug/L)", type: "number", placeholder: "e.g. 0.12" },
-    { key: "scenarios_pass", label: "FOCUS Scenarios Passing", type: "text", placeholder: "e.g. 6/9" },
-    { key: "lysimeter", label: "Lysimeter Study", type: "select", options: ["Not Required", "Available", "Ongoing", "Planned"] },
-  ],
-  bees: [
-    { key: "hq_oral", label: "HQ Oral", type: "number", placeholder: "e.g. 0.02" },
-    { key: "hq_contact", label: "HQ Contact", type: "number", placeholder: "e.g. 0.01" },
-    { key: "tier", label: "Assessment Tier", type: "select", options: ["Tier 1", "Tier 2", "Tier 3"] },
-    { key: "higher_tier", label: "Higher Tier Studies", type: "textarea", placeholder: "Tunnel studies, field studies, etc." },
-  ],
-  "birds-mammals": [
-    { key: "ter_bird_acute", label: "TER Birds (Acute)", type: "number", placeholder: "e.g. 15.2" },
-    { key: "ter_bird_chronic", label: "TER Birds (Chronic)", type: "number", placeholder: "e.g. 8.5" },
-    { key: "ter_mammal_acute", label: "TER Mammals (Acute)", type: "number", placeholder: "e.g. 45" },
-    { key: "ter_mammal_chronic", label: "TER Mammals (Chronic)", type: "number", placeholder: "e.g. 12" },
-    { key: "focal_species", label: "Focal Species", type: "text", placeholder: "e.g. Skylark, Wood mouse" },
-    { key: "mitigation", label: "Mitigation", type: "textarea", placeholder: "SPe5, application restrictions, etc." },
-  ],
-  operator: [
-    { key: "aoel_pct", label: "% AOEL (Operator)", type: "number", placeholder: "e.g. 45", unit: "%" },
-    { key: "exposure_model", label: "Exposure Model", type: "select", options: ["EFSA Calculator", "German BfR Model", "UK POEM", "Other"] },
-    { key: "ppe", label: "PPE Required", type: "text", placeholder: "e.g. Gloves during mixing/loading" },
-    { key: "application_method", label: "Application Method", type: "select", options: ["Tractor-mounted sprayer", "Knapsack", "Seed treatment", "Granule applicator"] },
-  ],
-  worker: [
-    { key: "aoel_pct", label: "% AOEL (Worker)", type: "number", placeholder: "e.g. 28", unit: "%" },
-    { key: "rei", label: "Re-entry Interval", type: "text", placeholder: "e.g. 48h" },
-    { key: "activity", label: "Worker Activity", type: "text", placeholder: "e.g. Inspection, harvesting" },
-  ],
-  "resident-bystander": [
-    { key: "aoel_pct_resident", label: "% AOEL (Resident)", type: "number", placeholder: "e.g. 15", unit: "%" },
-    { key: "aoel_pct_bystander", label: "% AOEL (Bystander)", type: "number", placeholder: "e.g. 8", unit: "%" },
-    { key: "buffer_required", label: "Buffer Required", type: "select", options: ["None", "5m", "10m", "20m", "50m"] },
-  ],
-  "residue-studies": [
-    { key: "trials_north", label: "Northern EU Trials", type: "number", placeholder: "e.g. 8" },
-    { key: "trials_south", label: "Southern EU Trials", type: "number", placeholder: "e.g. 8" },
-    { key: "mrl_proposal", label: "MRL Proposal (mg/kg)", type: "number", placeholder: "e.g. 0.3" },
-    { key: "crops", label: "Crops Covered", type: "text", placeholder: "e.g. Cereals, oilseed rape" },
-  ],
-  "consumer-chronic": [
-    { key: "adi_pct", label: "% ADI", type: "number", placeholder: "e.g. 12", unit: "%" },
-    { key: "model", label: "Dietary Model", type: "select", options: ["EFSA PRIMo rev.3", "EFSA PRIMo rev.4", "National model"] },
-    { key: "critical_commodity", label: "Critical Commodity", type: "text", placeholder: "e.g. Wheat grain" },
-  ],
-  "consumer-acute": [
-    { key: "arfd_pct", label: "% ARfD", type: "number", placeholder: "e.g. 35", unit: "%" },
-    { key: "critical_commodity", label: "Critical Commodity", type: "text", placeholder: "e.g. Cereals" },
-  ],
-};
-
-// Default fields for sections without specific fields defined
-const DEFAULT_FIELDS: FieldDef[] = [
-  { key: "notes", label: "Assessment Notes", type: "textarea", placeholder: "Enter assessment details..." },
-];
+const NOTES_PLACEHOLDER = "Enter assessment notes...";
 
 export default function AssessmentModal({
   sectionId,
   sectionName,
   assessment,
+  countries = [],
   onClose,
   onSave,
 }: {
   sectionId: string;
   sectionName: string;
   assessment?: SectionAssessment;
+  countries?: CountryUse[];
   onClose: () => void;
   onSave: (data: SectionAssessment) => void;
 }) {
@@ -121,12 +48,15 @@ export default function AssessmentModal({
   );
   const [summary, setSummary] = useState(assessment?.summary || "");
   const [assessor, setAssessor] = useState(assessment?.assessor || "");
-  const [details, setDetails] = useState<Record<string, string | number>>(
-    (assessment?.details as Record<string, string | number>) || {}
+  const [notes, setNotes] = useState<string>(
+    (assessment?.details as Record<string, string>)?.notes || ""
+  );
+  const [useOutcomes, setUseOutcomes] = useState<Record<string, RiskLevel>>(
+    assessment?.useOutcomes ?? {}
   );
   const [isDirty, setIsDirty] = useState(false);
 
-  const fields = SECTION_FIELDS[sectionId] || DEFAULT_FIELDS;
+  const totalUses = countries.reduce((sum, c) => sum + c.uses.length, 0);
 
   function markDirty() {
     if (!isDirty) setIsDirty(true);
@@ -154,6 +84,11 @@ export default function AssessmentModal({
     onClose();
   }
 
+  function handleUseOutcomeChange(useId: string, level: RiskLevel) {
+    setUseOutcomes((prev) => ({ ...prev, [useId]: level }));
+    markDirty();
+  }
+
   function handleSave() {
     onSave({
       sectionId,
@@ -161,14 +96,10 @@ export default function AssessmentModal({
       summary,
       assessor,
       lastUpdated: new Date().toISOString().split("T")[0],
-      details: Object.keys(details).length > 0 ? details : undefined,
+      details: notes ? { notes } : undefined,
+      useOutcomes: Object.keys(useOutcomes).length > 0 ? useOutcomes : undefined,
     });
     onClose();
-  }
-
-  function updateDetail(key: string, value: string | number) {
-    setDetails((prev) => ({ ...prev, [key]: value }));
-    markDirty();
   }
 
   return (
@@ -237,63 +168,18 @@ export default function AssessmentModal({
             />
           </div>
 
-          {/* Section-specific fields */}
+          {/* Assessment Notes */}
           <div className="mb-4">
-            <h4 className="text-sm font-medium text-foreground mb-3">
-              Assessment Details
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {fields.map((field) => (
-                <div
-                  key={field.key}
-                  className={field.type === "textarea" ? "sm:col-span-2" : ""}
-                >
-                  <label className="block text-xs font-medium text-muted mb-1">
-                    {field.label}
-                    {field.unit && (
-                      <span className="text-muted"> ({field.unit})</span>
-                    )}
-                  </label>
-                  {field.type === "textarea" ? (
-                    <textarea
-                      value={(details[field.key] as string) || ""}
-                      onChange={(e) => updateDetail(field.key, e.target.value)}
-                      placeholder={field.placeholder}
-                      rows={3}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  ) : field.type === "select" ? (
-                    <select
-                      value={(details[field.key] as string) || ""}
-                      onChange={(e) => updateDetail(field.key, e.target.value)}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="">Select...</option>
-                      {field.options?.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
-                    </select>
-                  ) : (
-                    <input
-                      type={field.type}
-                      value={(details[field.key] as string) || ""}
-                      onChange={(e) =>
-                        updateDetail(
-                          field.key,
-                          field.type === "number"
-                            ? e.target.value
-                            : e.target.value
-                        )
-                      }
-                      placeholder={field.placeholder}
-                      className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
+            <label className="block text-sm font-medium text-foreground mb-1">
+              Assessment Notes
+            </label>
+            <textarea
+              value={notes}
+              onChange={(e) => { setNotes(e.target.value); markDirty(); }}
+              placeholder={NOTES_PLACEHOLDER}
+              rows={4}
+              className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
           </div>
 
           {/* Summary */}
@@ -309,6 +195,64 @@ export default function AssessmentModal({
               className="w-full px-3 py-2 border border-border rounded-lg text-sm bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
+
+          {/* Per-Use Outcomes */}
+          {totalUses > 0 && (
+            <div className="mb-6">
+              <h4 className="text-sm font-medium text-foreground mb-1">
+                Per-Use Outcomes
+              </h4>
+              <p className="text-xs text-muted mb-3">
+                Set the outcome of this section&apos;s assessment for each defined use.
+              </p>
+              <div className="space-y-4">
+                {countries.map((country) => {
+                  if (country.uses.length === 0) return null;
+                  return (
+                    <div key={country.countryCode}>
+                      <p className="text-xs font-semibold text-muted uppercase tracking-wide mb-2">
+                        {country.countryCode}
+                      </p>
+                      <div className="space-y-3">
+                        {country.uses.map((use) => {
+                          const current = useOutcomes[use.id] ?? "not-started";
+                          return (
+                            <div key={use.id} className="pl-3 border-l-2 border-border">
+                              <p className="text-xs text-foreground mb-1.5 font-medium">
+                                {use.description}
+                              </p>
+                              <div className="flex flex-wrap gap-1.5">
+                                {RISK_OPTIONS.map((level) => {
+                                  const cfg = RISK_LEVEL_CONFIG[level];
+                                  const selected = current === level;
+                                  return (
+                                    <button
+                                      key={level}
+                                      onClick={() => handleUseOutcomeChange(use.id, level)}
+                                      className={`flex items-center gap-1.5 px-2 py-1 rounded-md border text-xs font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
+                                        selected
+                                          ? `${cfg.bgColor} ${cfg.borderColor} ${cfg.color}`
+                                          : "bg-background border-border text-muted hover:bg-border/30"
+                                      }`}
+                                    >
+                                      <div
+                                        className={`w-2 h-2 rounded-full shrink-0 ${RISK_OPTION_DOT[level]}`}
+                                      />
+                                      {cfg.label}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Actions */}
           <div className="flex items-center justify-between">

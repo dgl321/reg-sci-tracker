@@ -142,6 +142,19 @@ export interface SectionAssessment {
   assessor?: string;
   lastUpdated?: string;
   details?: Record<string, string | number>;
+  useOutcomes?: Record<string, RiskLevel>; // gapUseId -> outcome for this section
+}
+
+// GAP use (crop/use registered per country)
+export interface GAPUse {
+  id: string;
+  description: string; // e.g. "Winter Wheat, 2 x 200 g a.s./ha at BBCH 30-32"
+  notes?: string;
+}
+
+export interface CountryUse {
+  countryCode: string;
+  uses: GAPUse[];
 }
 
 // Product / Project
@@ -155,7 +168,7 @@ export interface Product {
   productName: string;
   type: SubstanceType;
   projectOwner: string;
-  countries: string[];
+  countries: CountryUse[];
   submissionType: SubmissionType;
   status: string;
   targetSubmissionDate?: string;

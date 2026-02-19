@@ -1,4 +1,4 @@
-import { Product } from "./types";
+import { Product, CountryUse } from "./types";
 
 export const products: Product[] = [
   {
@@ -7,7 +7,31 @@ export const products: Product[] = [
     productName: "Prothio 250 EC",
     type: "Fungicide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["IE", "UK", "DE", "FR", "PL"],
+    countries: [
+      {
+        countryCode: "IE",
+        uses: [
+          { id: "prothio-ec-ie-1", description: "Winter Wheat, 2 x 200 g a.s./ha at BBCH 30-32" },
+          { id: "prothio-ec-ie-2", description: "Winter Barley, 2 x 175 g a.s./ha at BBCH 30-32" },
+          { id: "prothio-ec-ie-3", description: "Oilseed Rape, 1 x 200 g a.s./ha at BBCH 56-65", notes: "20m buffer zone required (SPe3)" },
+        ],
+      },
+      {
+        countryCode: "UK",
+        uses: [
+          { id: "prothio-ec-uk-1", description: "Winter Wheat, 2 x 200 g a.s./ha at BBCH 30-32" },
+          { id: "prothio-ec-uk-2", description: "Spring Barley, 1 x 200 g a.s./ha at BBCH 30", notes: "20m buffer zone required" },
+        ],
+      },
+      {
+        countryCode: "DE",
+        uses: [
+          { id: "prothio-ec-de-1", description: "Winter Wheat, 2 x 200 g a.s./ha at BBCH 30-39" },
+        ],
+      },
+      { countryCode: "FR", uses: [] },
+      { countryCode: "PL", uses: [] },
+    ] as CountryUse[],
     submissionType: "Renewal",
     status: "Dossier preparation",
     targetSubmissionDate: "2026-06-15",
@@ -27,6 +51,14 @@ export const products: Product[] = [
           "TER Daphnia (FOCUS Step 3)": 105,
           "Buffer Zone": "20m",
           "Mitigation": "SPe3 buffer zone required",
+        },
+        useOutcomes: {
+          "prothio-ec-ie-1": "pass-with-mitigation",
+          "prothio-ec-ie-2": "pass-with-mitigation",
+          "prothio-ec-ie-3": "pass-with-mitigation",
+          "prothio-ec-uk-1": "pass",
+          "prothio-ec-uk-2": "pass-with-mitigation",
+          "prothio-ec-de-1": "pass",
         },
       },
       {
@@ -50,6 +82,14 @@ export const products: Product[] = [
         summary: "HQ oral = 0.02, HQ contact = 0.01. Well below triggers. No higher tier needed.",
         assessor: "Lou Pope (LP)",
         lastUpdated: "2025-12-20",
+        useOutcomes: {
+          "prothio-ec-ie-1": "pass",
+          "prothio-ec-ie-2": "pass",
+          "prothio-ec-ie-3": "pass",
+          "prothio-ec-uk-1": "pass",
+          "prothio-ec-uk-2": "pass",
+          "prothio-ec-de-1": "pass",
+        },
       },
       {
         sectionId: "birds-mammals",
@@ -79,6 +119,14 @@ export const products: Product[] = [
           "AOEL not exceeded with PPE. Operator exposure 45% AOEL with gloves during mixing/loading.",
         assessor: "Louise Esmonde (LE)",
         lastUpdated: "2026-01-05",
+        useOutcomes: {
+          "prothio-ec-ie-1": "pass",
+          "prothio-ec-ie-2": "pass",
+          "prothio-ec-ie-3": "pass",
+          "prothio-ec-uk-1": "pass",
+          "prothio-ec-uk-2": "pass",
+          "prothio-ec-de-1": "pass",
+        },
       },
       {
         sectionId: "worker",
@@ -179,7 +227,17 @@ export const products: Product[] = [
     productName: "Prothio/Metco 100/48",
     type: "Fungicide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["DE", "FR", "PL", "CZ"],
+    countries: [
+      {
+        countryCode: "DE",
+        uses: [
+          { id: "prothio-metco-de-1", description: "Winter Wheat, 1 x 100/48 g a.s./ha at BBCH 39", notes: "Operator AOEL close to threshold; combined assessment pending" },
+        ],
+      },
+      { countryCode: "FR", uses: [] },
+      { countryCode: "PL", uses: [] },
+      { countryCode: "CZ", uses: [] },
+    ] as CountryUse[],
     submissionType: "Renewal",
     status: "Preliminary ERA ongoing",
     targetSubmissionDate: "2026-09-01",
@@ -318,7 +376,24 @@ export const products: Product[] = [
     productName: "Boscalid 500 SC",
     type: "Fungicide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["IE", "UK", "FR", "NL", "BE"],
+    countries: [
+      {
+        countryCode: "IE",
+        uses: [
+          { id: "bosc-ie-1", description: "Oilseed Rape, 1 x 250 g a.s./ha at BBCH 56-65" },
+          { id: "bosc-ie-2", description: "Potato, 2 x 250 g a.s./ha at BBCH 31-39" },
+        ],
+      },
+      {
+        countryCode: "UK",
+        uses: [
+          { id: "bosc-uk-1", description: "Potato, 2 x 250 g a.s./ha at BBCH 31-39" },
+        ],
+      },
+      { countryCode: "FR", uses: [] },
+      { countryCode: "NL", uses: [] },
+      { countryCode: "BE", uses: [] },
+    ] as CountryUse[],
     submissionType: "Art 33",
     status: "Assessment phase",
     targetSubmissionDate: "2026-03-01",
@@ -481,7 +556,24 @@ export const products: Product[] = [
     productName: "Spinosad 480 SC",
     type: "Insecticide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["IE", "ES", "IT", "GR", "PT"],
+    countries: [
+      {
+        countryCode: "IE",
+        uses: [
+          { id: "spino-ie-1", description: "Brassicas, 2 x 120 g a.s./ha at BBCH 20-40", notes: "NTA in-field risk unacceptable at current rate" },
+        ],
+      },
+      {
+        countryCode: "ES",
+        uses: [
+          { id: "spino-es-1", description: "Protected Tomato, 3 x 120 g a.s./ha" },
+          { id: "spino-es-2", description: "Citrus, 2 x 120 g a.s./ha" },
+        ],
+      },
+      { countryCode: "IT", uses: [] },
+      { countryCode: "GR", uses: [] },
+      { countryCode: "PT", uses: [] },
+    ] as CountryUse[],
     submissionType: "Renewal",
     status: "Early assessment",
     targetSubmissionDate: "2027-01-15",
@@ -633,7 +725,19 @@ export const products: Product[] = [
     productName: "Clomazone 360 CS",
     type: "Herbicide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["UK", "DE", "PL", "HU", "RO"],
+    countries: [
+      {
+        countryCode: "UK",
+        uses: [
+          { id: "clom-uk-1", description: "Oilseed Rape, pre-emergence, 1 x 200 g a.s./ha", notes: "5m buffer zone; application timing restrictions re: vapour phase" },
+          { id: "clom-uk-2", description: "Potato, pre-emergence, 1 x 200 g a.s./ha" },
+        ],
+      },
+      { countryCode: "DE", uses: [] },
+      { countryCode: "PL", uses: [] },
+      { countryCode: "HU", uses: [] },
+      { countryCode: "RO", uses: [] },
+    ] as CountryUse[],
     submissionType: "Art 33",
     status: "Dossier submitted - awaiting assessment",
     targetSubmissionDate: "2025-12-01",
@@ -796,7 +900,11 @@ export const products: Product[] = [
     productName: "Pyraclostrobin 200 EC",
     type: "Fungicide",
     projectOwner: "Keith McQuillan (KMQ)",
-    countries: ["DE", "FR", "PL"],
+    countries: [
+      { countryCode: "DE", uses: [] },
+      { countryCode: "FR", uses: [] },
+      { countryCode: "PL", uses: [] },
+    ] as CountryUse[],
     submissionType: "Renewal",
     status: "Pre-submission planning",
     targetSubmissionDate: "2027-03-01",

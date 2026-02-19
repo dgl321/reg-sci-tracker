@@ -15,8 +15,10 @@ import RiskBadge from "@/components/RiskBadge";
 import RiskSummaryBar from "@/components/RiskSummaryBar";
 import RiskMatrixGrid from "@/components/RiskMatrixGrid";
 import AssessmentModal from "@/components/AssessmentModal";
+import UsesTab from "@/components/UsesTab";
+import { CountryUse } from "@/lib/types";
 
-type Tab = "matrix" | "summary";
+type Tab = "matrix" | "summary" | "uses";
 
 function CircularProgress({ value }: { value: number }) {
   const radius = 18;
@@ -148,9 +150,14 @@ export default function ProductPage({
     setEditingConclusion(false);
   }
 
+  function handleUpdateCountries(countries: CountryUse[]) {
+    setProduct((prev) => (prev ? { ...prev, countries } : prev));
+  }
+
   const tabs: { key: Tab; label: string }[] = [
     { key: "summary", label: "Summary" },
     { key: "matrix", label: "Risk Matrix" },
+    { key: "uses", label: "GAP Uses" },
   ];
 
   return (
@@ -189,7 +196,7 @@ export default function ProductPage({
               <div>
                 <span className="text-muted">Countries:</span>{" "}
                 <span className="font-medium text-foreground">
-                  {product.countries.join(", ")}
+                  {product.countries.map((c) => c.countryCode).join(", ")}
                 </span>
               </div>
               <div>
@@ -255,6 +262,15 @@ export default function ProductPage({
           </button>
         ))}
       </div>
+
+      {/* Tab: GAP Uses */}
+      {activeTab === "uses" && (
+        <UsesTab
+          countries={product.countries}
+          assessments={product.assessments}
+          onUpdate={handleUpdateCountries}
+        />
+      )}
 
       {/* Tab: Risk Matrix */}
       {activeTab === "matrix" && (
@@ -408,6 +424,7 @@ export default function ProductPage({
           assessment={product.assessments.find(
             (a) => a.sectionId === editingSection.sectionId
           )}
+          countries={product.countries}
           onClose={() => setEditingSection(null)}
           onSave={handleSaveAssessment}
         />

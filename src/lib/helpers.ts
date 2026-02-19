@@ -1,4 +1,4 @@
-import { Product, RiskLevel, SPECIALIST_GROUPS } from "./types";
+import { Product, RiskLevel, SPECIALIST_GROUPS, CountryUse } from "./types";
 
 export function getRiskDistribution(
   product: Product
@@ -70,6 +70,10 @@ export function formatDate(date: string | undefined): string {
   const [y, m, d] = date.split("-");
   if (!y || !m || !d) return date;
   return `${d}/${m}/${y}`;
+}
+
+export function getCountryCodes(countries: CountryUse[]): string[] {
+  return countries.map((c) => c.countryCode);
 }
 
 export function getCountryFlag(code: string): string {
