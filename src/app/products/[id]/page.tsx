@@ -207,13 +207,12 @@ export default function ProductPage({
               <div>
                 <span className="text-muted">EU Approval:</span>{" "}
                 <span
-                  className={`font-medium ${
-                    product.euApprovalStatus === "Approved"
+                  className={`font-medium ${product.euApprovalStatus === "Approved"
                       ? "text-green-700 dark:text-green-400"
                       : product.euApprovalStatus === "Pending"
-                      ? "text-amber-700 dark:text-amber-400"
-                      : "text-red-700 dark:text-red-400"
-                  }`}
+                        ? "text-amber-700 dark:text-amber-400"
+                        : "text-red-700 dark:text-red-400"
+                    }`}
                 >
                   {product.euApprovalStatus}
                 </span>
@@ -247,11 +246,10 @@ export default function ProductPage({
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`px-5 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${
-              activeTab === tab.key
+            className={`px-5 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${activeTab === tab.key
                 ? "border-blue-600 text-blue-600"
                 : "border-transparent text-muted hover:text-foreground hover:border-border"
-            }`}
+              }`}
           >
             {tab.label}
           </button>
@@ -278,7 +276,7 @@ export default function ProductPage({
           <div className="mb-6">
             <div className="flex items-center justify-between mb-2">
               <h4 className="text-sm font-medium text-foreground">
-                Conclusions / Findings
+                Conclusions
               </h4>
               {!editingConclusion && (
                 <button
@@ -349,13 +347,12 @@ export default function ProductPage({
                   .map((a) => (
                     <li key={a.sectionId} className="flex items-start gap-2 text-sm">
                       <div
-                        className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${
-                          a.riskLevel === "critical"
+                        className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${a.riskLevel === "critical"
                             ? "bg-red-800"
                             : a.riskLevel === "fail"
-                            ? "bg-red-500"
-                            : "bg-amber-500"
-                        }`}
+                              ? "bg-red-500"
+                              : "bg-amber-500"
+                          }`}
                       />
                       <div>
                         <span className="font-medium text-foreground">
@@ -371,10 +368,10 @@ export default function ProductPage({
                     a.riskLevel === "fail" ||
                     a.riskLevel === "refinement-needed"
                 ).length === 0 && (
-                  <li className="text-sm text-muted italic">
-                    No critical concerns identified.
-                  </li>
-                )}
+                    <li className="text-sm text-muted italic">
+                      No critical concerns identified.
+                    </li>
+                  )}
               </ul>
             </div>
             <div>
@@ -395,8 +392,8 @@ export default function ProductPage({
                   ))}
                 {product.assessments.filter((a) => a.riskLevel === "not-started")
                   .length === 0 && (
-                  <li className="text-sm text-muted italic">All sections assessed.</li>
-                )}
+                    <li className="text-sm text-muted italic">All sections assessed.</li>
+                  )}
               </ul>
             </div>
           </div>
