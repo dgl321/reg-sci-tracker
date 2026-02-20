@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { products } from "@/lib/mock-data";
+import { Product } from "@/lib/types";
 import {
   getRiskDistribution,
   getOverallRisk,
@@ -25,11 +25,16 @@ const RISK_SEVERITY: Record<RiskLevel, number> = {
 };
 
 export default function Home() {
+  const [products, setProducts] = useState<Product[]>([]);
   const [view, setView] = useState<ViewMode>("cards");
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [riskFilter, setRiskFilter] = useState<string>("all");
   const [sortKey, setSortKey] = useState<SortKey>("name");
+
+  useEffect(() => {
+    fetch("/api/products").then((r) => r.json()).then(setProducts);
+  }, []);
 
   const types = [...new Set(products.map((p) => p.type))];
 
@@ -60,7 +65,7 @@ export default function Home() {
       }
       return 0;
     });
-  }, [search, typeFilter, riskFilter, sortKey]);
+  }, [products, search, typeFilter, riskFilter, sortKey]);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">

@@ -1,0 +1,32 @@
+{
+  "title": "FOCUS SW crop × scenario links (from SWASH GUI)",
+  "description": "Valid crop–scenario combinations for FOCUS surface water. Crop names match SWASH Crop table (focus_crops.swash_crop_name). Scenario codes match focus_scenarios.scenario_code.",
+  "source": "SWASH GUI export",
+  "crop_scenarios": [
+    { "crop": "Cereals, spring", "scenarios": ["D1", "D3", "D4", "D5", "R4"] },
+    { "crop": "Cereals, winter", "scenarios": ["D1", "D2", "D3", "D4", "D5", "D6", "R1", "R3", "R4"] },
+    { "crop": "Citrus", "scenarios": ["D6", "R4"] },
+    { "crop": "Cotton", "scenarios": ["D6"] },
+    { "crop": "Field beans", "scenarios": ["D2", "D3", "D4", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Grass/alfalfa", "scenarios": ["D1", "D2", "D3", "D4", "D5", "R2", "R3"] },
+    { "crop": "Hops", "scenarios": ["R1"] },
+    { "crop": "Legumes", "scenarios": ["D3", "D4", "D5", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Maize", "scenarios": ["D3", "D4", "D5", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Oil seed rape, spring", "scenarios": ["D3", "D4", "D5", "R1"] },
+    { "crop": "Oil seed rape, winter", "scenarios": ["D2", "D3", "D4", "D5", "R1", "R3"] },
+    { "crop": "Olives", "scenarios": ["D6", "R4"] },
+    { "crop": "Pome/stone fruit, early applications", "scenarios": ["D3", "D4", "D5", "R1", "R2", "R3", "R4"] },
+    { "crop": "Pome/stone fruit, late applications", "scenarios": ["D3", "D4", "D5", "R1", "R2", "R3", "R4"] },
+    { "crop": "Potatoes", "scenarios": ["D3", "D4", "D6", "R1", "R2", "R3"] },
+    { "crop": "Soybeans", "scenarios": ["R3", "R4"] },
+    { "crop": "Sugar beets", "scenarios": ["D3", "D4", "R1", "R3"] },
+    { "crop": "Sunflowers", "scenarios": ["D3", "D5", "R1", "R4"] },
+    { "crop": "Tobacco", "scenarios": ["R3"] },
+    { "crop": "Vegetables, bulb", "scenarios": ["D3", "D4", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Vegetables, fruiting", "scenarios": ["D6", "R2", "R3", "R4"] },
+    { "crop": "Vegetables, leafy", "scenarios": ["D3", "D4", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Vegetables, root", "scenarios": ["D3", "D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Vines, early applications", "scenarios": ["D6", "R1", "R2", "R3", "R4"] },
+    { "crop": "Vines, late applications", "scenarios": ["D6", "R1", "R2", "R3", "R4"] }
+  ]
+}

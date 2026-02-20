@@ -1,0 +1,495 @@
+{
+    "schema_version": "1.0",
+    "sources": {
+        "central_zone": {
+            "title": "Central Zone National requirements revision May 2021 incl update SI June 2022 (Excel) by Central Zone Steering Committee",
+            "url": "https://circabc.europa.eu/ui/group/0b40948d-7247-4819-bbf9-ecca3250d893/library/6f66c6d2-d175-4784-9bcd-35e51abe3def/details"
+        },
+        "northern_zone": {
+            "title": "Guidance Document on Work-sharing in the Northern Zone In the Authorisation of Plant Protection Products (PDF) by Northern Zone Steering Committee",
+            "url": "https://www.kemi.se/download/18.35ce338719197548f4921885/1725956219553/Northern-Zone-Guidance-Document-2024.pdf"
+        },
+        "southern_zone": {
+            "title": "Working Document on the Work-sharing of the Southern Zone Member States Under Regulation EC 1107/2009 (PDF) by Southern Zone Steering Committee",
+            "url": "https://circabc.europa.eu/ui/group/0b40948d-7247-4819-bbf9-ecca3250d893/library/339556f9-6aab-4cb5-a6a1-c32922eac7b5/details"
+        }
+    },
+    "countries": [
+        {
+            "country": "Austria",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": true,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Belgium",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Bulgaria",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": false,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Croatia",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": null,
+                "D2": null,
+                "D3": null,
+                "D4": null,
+                "D5": null,
+                "D6": null,
+                "R1": null,
+                "R2": null,
+                "R3": null,
+                "R4": null
+            },
+            "notes": ""
+        },
+        {
+            "country": "Cyprus",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": null,
+                "D2": null,
+                "D3": null,
+                "D4": null,
+                "D5": null,
+                "D6": null,
+                "R1": null,
+                "R2": null,
+                "R3": null,
+                "R4": null
+            },
+            "notes": ""
+        },
+        {
+            "country": "Czechia",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Denmark",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": false,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Estonia",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": true,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Finland",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": true,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "France",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": true,
+                "D3": true,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": true,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Germany",
+            "zone": "Central",
+            "scenarios": {
+                "D1": null,
+                "D2": null,
+                "D3": null,
+                "D4": null,
+                "D5": null,
+                "D6": null,
+                "R1": null,
+                "R2": null,
+                "R3": null,
+                "R4": null
+            },
+            "notes": "Germany has its own national assessment for surface water using EXPOSIT and EVA calculations. However, as zRMS Germany evaluates all core scenarios."
+        },
+        {
+            "country": "Greece",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": true,
+                "R1": false,
+                "R2": false,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Hungary",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": false,
+                "D5": true,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Ireland",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Italy",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": true,
+                "R1": false,
+                "R2": false,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Latvia",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": true,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Lithuania",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": true,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Luxembourg",
+            "zone": "Central",
+            "scenarios": {
+                "D1": true,
+                "D2": true,
+                "D3": true,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": "No data available, default central zone scenarios used."
+        },
+        {
+            "country": "Malta",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": null,
+                "D2": null,
+                "D3": null,
+                "D4": null,
+                "D5": null,
+                "D6": null,
+                "R1": null,
+                "R2": null,
+                "R3": null,
+                "R4": null
+            },
+            "notes": "No data available."
+        },
+        {
+            "country": "Netherlands",
+            "zone": "Central",
+            "scenarios": {
+                "D1": null,
+                "D2": null,
+                "D3": null,
+                "D4": null,
+                "D5": null,
+                "D6": null,
+                "R1": null,
+                "R2": null,
+                "R3": null,
+                "R4": null
+            },
+            "notes": "The Netherlands (Cgbt) use their own national surface water assessment. However, as zRMS Netherland evaluates all core scenarios i.e. D1-D6 and R1-R4."
+        },
+        {
+            "country": "Norway",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": true,
+                "R3": false,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Poland",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": true,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Portugal",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": true,
+                "D3": true,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": true,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Romania",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": false,
+                "D5": true,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Slovakia",
+            "zone": "Central",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": true,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        },
+        {
+            "country": "Slovenia",
+            "zone": "Central",
+            "scenarios": {
+                "D1": true,
+                "D2": true,
+                "D3": true,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": "No data available, default central zone scenarios used."
+        },
+        {
+            "country": "Spain",
+            "zone": "Southern",
+            "scenarios": {
+                "D1": false,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": true,
+                "D6": true,
+                "R1": true,
+                "R2": true,
+                "R3": true,
+                "R4": true
+            },
+            "notes": ""
+        },
+        {
+            "country": "Sweden",
+            "zone": "Northern",
+            "scenarios": {
+                "D1": true,
+                "D2": false,
+                "D3": false,
+                "D4": true,
+                "D5": false,
+                "D6": false,
+                "R1": true,
+                "R2": false,
+                "R3": false,
+                "R4": false
+            },
+            "notes": ""
+        }
+    ]
+}

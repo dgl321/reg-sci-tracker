@@ -1,0 +1,2247 @@
+{
+    "title": "PRIMo Hierarchy - FoodEx2 Classification",
+    "description": "Matrix codes mapped to EFSA FoodEx2 codes for dietary risk assessment",
+    "totalItems": 320,
+    "items": [
+      {
+        "matrixCode": "P0100000",
+        "foodEx2Code": "A04HL",
+        "foodEx2Name": "Fruits, fresh or frozen; tree nuts",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0200000",
+        "foodEx2Code": "A04JC",
+        "foodEx2Name": "Vegetables, fresh or frozen",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0300000",
+        "foodEx2Code": "A012R",
+        "foodEx2Name": "Pulses (dried legume seeds)",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0400000",
+        "foodEx2Code": "A015E",
+        "foodEx2Name": "Oilseeds and oilfruits",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0500000",
+        "foodEx2Code": "A000L",
+        "foodEx2Name": "Cereal grains (and cereal-like grains)",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0600000",
+        "foodEx2Code": "A04JF",
+        "foodEx2Name": "Tea, coffee, herbal infusion materials, cocoa and carobs",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0700000",
+        "foodEx2Code": "A0CZG",
+        "foodEx2Name": "Hops and similar-",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0800000",
+        "foodEx2Code": "A016S",
+        "foodEx2Name": "Spices",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0900000",
+        "foodEx2Code": "A010R",
+        "foodEx2Name": "Sugar plants",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P1000000",
+        "foodEx2Code": "A04HM",
+        "foodEx2Name": "PRODUCTS OF ANIMAL ORIGIN -TERRESTRIAL ANIMALS",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P1100000",
+        "foodEx2Code": "A04HZ",
+        "foodEx2Name": "PRODUCTS OF ANIMAL ORIGIN - FISH, FISH PRODUCTS AND ANY OTHER MARINE AND FRESHWATER FOOD PRODUCTS",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "PW100000",
+        "foodEx2Code": "A03DK",
+        "foodEx2Name": "Drinking water",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "PX100000",
+        "foodEx2Code": "A03PX",
+        "foodEx2Name": "Food for infants and young children",
+        "level": 1,
+        "parentMatrixCode": null
+      },
+      {
+        "matrixCode": "P0110000",
+        "foodEx2Code": "A01BT",
+        "foodEx2Name": "Citrus fruits",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0120000",
+        "foodEx2Code": "A014C",
+        "foodEx2Name": "Tree nuts",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0130000",
+        "foodEx2Code": "A01DG",
+        "foodEx2Name": "Pome fruits",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0140000",
+        "foodEx2Code": "A01GE",
+        "foodEx2Name": "Stone fruits",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0150000",
+        "foodEx2Code": "A01DT",
+        "foodEx2Name": "Berries and small fruits",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0160000",
+        "foodEx2Code": "A01HD",
+        "foodEx2Name": "Miscellaneous fruits (generic)",
+        "level": 2,
+        "parentMatrixCode": "P0100000"
+      },
+      {
+        "matrixCode": "P0210000",
+        "foodEx2Code": "A04JD",
+        "foodEx2Name": "Root and tuber vegetables",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0220000",
+        "foodEx2Code": "A00GX",
+        "foodEx2Name": "Bulb vegetables",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0230000",
+        "foodEx2Code": "A00HN",
+        "foodEx2Name": "Fruiting vegetables",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0240000",
+        "foodEx2Code": "A00FK",
+        "foodEx2Name": "Brassica vegetables (excluding brassica roots and brassica baby leaf crops)",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0250000",
+        "foodEx2Code": "A04JE",
+        "foodEx2Name": "Leaf vegetables, herbs and edible flowers",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0260000",
+        "foodEx2Code": "A0ESR",
+        "foodEx2Name": "Legume vegetables fresh (p)",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0270000",
+        "foodEx2Code": "A04JA",
+        "foodEx2Name": "Stem vegetables",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0280000",
+        "foodEx2Code": "A00TC",
+        "foodEx2Name": "Fungi, mosses and lichens",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0290000",
+        "foodEx2Code": "A00VA",
+        "foodEx2Name": "Algae and prokaryotes organisms",
+        "level": 2,
+        "parentMatrixCode": "P0200000"
+      },
+      {
+        "matrixCode": "P0300010",
+        "foodEx2Code": "A012S",
+        "foodEx2Name": "Beans (dry) and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0300000"
+      },
+      {
+        "matrixCode": "P0300020",
+        "foodEx2Code": "A0DCE",
+        "foodEx2Name": "Lentils (dry) and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0300000"
+      },
+      {
+        "matrixCode": "P0300030",
+        "foodEx2Code": "A0DCD",
+        "foodEx2Name": "Peas (dry) and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0300000"
+      },
+      {
+        "matrixCode": "P0401000",
+        "foodEx2Code": "A015F",
+        "foodEx2Name": "Oilseeds",
+        "level": 2,
+        "parentMatrixCode": "P0400000"
+      },
+      {
+        "matrixCode": "P0402000",
+        "foodEx2Code": "A016L",
+        "foodEx2Name": "Oil fruits",
+        "level": 2,
+        "parentMatrixCode": "P0400000"
+      },
+      {
+        "matrixCode": "P0500010",
+        "foodEx2Code": "A0D9Y",
+        "foodEx2Name": "Barley and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500020",
+        "foodEx2Code": "A04KH",
+        "foodEx2Name": "Buckwheat and other pseudo-cereals and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500030",
+        "foodEx2Code": "A000S",
+        "foodEx2Name": "Maize and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500040",
+        "foodEx2Code": "A000Y",
+        "foodEx2Name": "Common millet and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500050",
+        "foodEx2Code": "A000F",
+        "foodEx2Name": "Oat and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500060",
+        "foodEx2Code": "A001C",
+        "foodEx2Name": "Rice and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500070",
+        "foodEx2Code": "A0D9R",
+        "foodEx2Name": "Rye and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0500090",
+        "foodEx2Code": "A001M",
+        "foodEx2Name": "Wheat and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0500000"
+      },
+      {
+        "matrixCode": "P0610000",
+        "foodEx2Code": "A04KK",
+        "foodEx2Name": "Teas leaves, dry and/or fermented, and similar",
+        "level": 2,
+        "parentMatrixCode": "P0600000"
+      },
+      {
+        "matrixCode": "P0620000",
+        "foodEx2Code": "A0D9J",
+        "foodEx2Name": "Coffee beans and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0600000"
+      },
+      {
+        "matrixCode": "P0630000",
+        "foodEx2Code": "A03JA",
+        "foodEx2Name": "Herbal infusion materials (generic)",
+        "level": 2,
+        "parentMatrixCode": "P0600000"
+      },
+      {
+        "matrixCode": "P0640000",
+        "foodEx2Code": "A0CZM",
+        "foodEx2Name": "Cocoa beans and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0600000"
+      },
+      {
+        "matrixCode": "P0810000",
+        "foodEx2Code": "A017X",
+        "foodEx2Name": "Seed spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0820000",
+        "foodEx2Code": "A018Q",
+        "foodEx2Name": "Fruit spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0830000",
+        "foodEx2Code": "A019S",
+        "foodEx2Name": "Bark spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0840000",
+        "foodEx2Code": "A019Z",
+        "foodEx2Name": "Root and rhizome spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0850000",
+        "foodEx2Code": "A01AK",
+        "foodEx2Name": "Bud spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0860000",
+        "foodEx2Code": "A01AQ",
+        "foodEx2Name": "Flower pistil spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0870000",
+        "foodEx2Code": "A01AT",
+        "foodEx2Name": "Aril spices",
+        "level": 2,
+        "parentMatrixCode": "P0800000"
+      },
+      {
+        "matrixCode": "P0900010",
+        "foodEx2Code": "A0CXQ",
+        "foodEx2Name": "Sugar beet roots and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0900000"
+      },
+      {
+        "matrixCode": "P0900020",
+        "foodEx2Code": "A0CXP",
+        "foodEx2Name": "Sugar canes and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0900000"
+      },
+      {
+        "matrixCode": "P0900030",
+        "foodEx2Code": "A0CXM",
+        "foodEx2Name": "Chicory roots and similar-",
+        "level": 2,
+        "parentMatrixCode": "P0900000"
+      },
+      {
+        "matrixCode": "P0900990",
+        "foodEx2Code": "A04HB",
+        "foodEx2Name": "Other sugar plants",
+        "level": 2,
+        "parentMatrixCode": "P0900000"
+      },
+      {
+        "matrixCode": "P1010000",
+        "foodEx2Code": "A01QR",
+        "foodEx2Name": "Meat and meat products",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "P1020000",
+        "foodEx2Code": "A02LT",
+        "foodEx2Name": "Milk",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "P1030000",
+        "foodEx2Code": "A031F",
+        "foodEx2Name": "Whole eggs",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "P1040000",
+        "foodEx2Code": "A0CVK",
+        "foodEx2Name": "Honey and other apiculture products",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "P1050000",
+        "foodEx2Code": "A02KQ",
+        "foodEx2Name": "Amphibians and Reptiles",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "P1060000",
+        "foodEx2Code": "A04NM",
+        "foodEx2Name": "Terrestrial invertebrates",
+        "level": 2,
+        "parentMatrixCode": "P1000000"
+      },
+      {
+        "matrixCode": "PX100001",
+        "foodEx2Code": "A03RL",
+        "foodEx2Name": "Other food for infants and children",
+        "level": 2,
+        "parentMatrixCode": "PX100000"
+      },
+      {
+        "matrixCode": "PX100003",
+        "foodEx2Code": "A03QX",
+        "foodEx2Name": "Processed cereal-based food for infants and young children",
+        "level": 2,
+        "parentMatrixCode": "PX100000"
+      },
+      {
+        "matrixCode": "PX100004",
+        "foodEx2Code": "A03PZ",
+        "foodEx2Name": "Infant formulae, powder",
+        "level": 2,
+        "parentMatrixCode": "PX100000"
+      },
+      {
+        "matrixCode": "PX100005",
+        "foodEx2Code": "A03QK",
+        "foodEx2Name": "Follow-on formulae, powder",
+        "level": 2,
+        "parentMatrixCode": "PX100000"
+      },
+      {
+        "matrixCode": "P0110010",
+        "foodEx2Code": "A01CX",
+        "foodEx2Name": "Grapefruits and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0110000"
+      },
+      {
+        "matrixCode": "P0110020",
+        "foodEx2Code": "A01CP",
+        "foodEx2Name": "Oranges and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0110000"
+      },
+      {
+        "matrixCode": "P0110030",
+        "foodEx2Code": "A01BX",
+        "foodEx2Name": "Lemons and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0110000"
+      },
+      {
+        "matrixCode": "P0110040",
+        "foodEx2Code": "A0DYX",
+        "foodEx2Name": "Limes and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0110000"
+      },
+      {
+        "matrixCode": "P0110050",
+        "foodEx2Code": "A01CB",
+        "foodEx2Name": "Mandarins and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0110000"
+      },
+      {
+        "matrixCode": "P0120010",
+        "foodEx2Code": "A0DYP",
+        "foodEx2Name": "Almonds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120020",
+        "foodEx2Code": "A0DYL",
+        "foodEx2Name": "Brazil nuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120030",
+        "foodEx2Code": "A0DYK",
+        "foodEx2Name": "Cashew nuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120040",
+        "foodEx2Code": "A0DYJ",
+        "foodEx2Name": "Chestnuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120050",
+        "foodEx2Code": "A0DYD",
+        "foodEx2Name": "Coconuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120060",
+        "foodEx2Code": "A0CFF",
+        "foodEx2Name": "Hazelnuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120070",
+        "foodEx2Code": "A0DYA",
+        "foodEx2Name": "Macadamias and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120080",
+        "foodEx2Code": "A0DXX",
+        "foodEx2Name": "Pecans and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120090",
+        "foodEx2Code": "A014P",
+        "foodEx2Name": "Pine nut kernels and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120100",
+        "foodEx2Code": "A0DXK",
+        "foodEx2Name": "Pistachios and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0120110",
+        "foodEx2Code": "A0DXJ",
+        "foodEx2Name": "Walnuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0120000"
+      },
+      {
+        "matrixCode": "P0130010",
+        "foodEx2Code": "A01DH",
+        "foodEx2Name": "Apples and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0130000"
+      },
+      {
+        "matrixCode": "P0130020",
+        "foodEx2Code": "A01DN",
+        "foodEx2Name": "Pears and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0130000"
+      },
+      {
+        "matrixCode": "P0130030",
+        "foodEx2Code": "A0DXC",
+        "foodEx2Name": "Quinces and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0130000"
+      },
+      {
+        "matrixCode": "P0130040",
+        "foodEx2Code": "A0DVZ",
+        "foodEx2Name": "Medlars and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0130000"
+      },
+      {
+        "matrixCode": "P0130050",
+        "foodEx2Code": "A0DVY",
+        "foodEx2Name": "Loquats and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0130000"
+      },
+      {
+        "matrixCode": "P0140010",
+        "foodEx2Code": "A0DVX",
+        "foodEx2Name": "Apricots and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0140000"
+      },
+      {
+        "matrixCode": "P0140020",
+        "foodEx2Code": "A01GG",
+        "foodEx2Name": "Cherries and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0140000"
+      },
+      {
+        "matrixCode": "P0140030",
+        "foodEx2Code": "A01GL",
+        "foodEx2Name": "Peaches and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0140000"
+      },
+      {
+        "matrixCode": "P0140040",
+        "foodEx2Code": "A01GP",
+        "foodEx2Name": "Plums and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0140000"
+      },
+      {
+        "matrixCode": "P0151000",
+        "foodEx2Code": "A01DV",
+        "foodEx2Name": "Grapes and similar fruits",
+        "level": 3,
+        "parentMatrixCode": "P0150000"
+      },
+      {
+        "matrixCode": "P0152000",
+        "foodEx2Code": "A01DZ",
+        "foodEx2Name": "Strawberries and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0150000"
+      },
+      {
+        "matrixCode": "P0153000",
+        "foodEx2Code": "A01ED",
+        "foodEx2Name": "Cane fruits",
+        "level": 3,
+        "parentMatrixCode": "P0150000"
+      },
+      {
+        "matrixCode": "P0154000",
+        "foodEx2Code": "A01EX",
+        "foodEx2Name": "Other small fruits and berries",
+        "level": 3,
+        "parentMatrixCode": "P0150000"
+      },
+      {
+        "matrixCode": "P0161000",
+        "foodEx2Code": "A01HE",
+        "foodEx2Name": "Miscellaneous fruits with edible peel",
+        "level": 3,
+        "parentMatrixCode": "P0160000"
+      },
+      {
+        "matrixCode": "P0162000",
+        "foodEx2Code": "A01JS",
+        "foodEx2Name": "Miscellaneous fruits with inedible peel, small",
+        "level": 3,
+        "parentMatrixCode": "P0160000"
+      },
+      {
+        "matrixCode": "P0163000",
+        "foodEx2Code": "A01LA",
+        "foodEx2Name": "Miscellaneous fruits with inedible peel, large",
+        "level": 3,
+        "parentMatrixCode": "P0160000"
+      },
+      {
+        "matrixCode": "P0211000",
+        "foodEx2Code": "A0DPP",
+        "foodEx2Name": "Potatoes and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0210000"
+      },
+      {
+        "matrixCode": "P0212000",
+        "foodEx2Code": "A00ZY",
+        "foodEx2Name": "Tropical root and tuber vegetables",
+        "level": 3,
+        "parentMatrixCode": "P0210000"
+      },
+      {
+        "matrixCode": "P0213000",
+        "foodEx2Code": "A00QF",
+        "foodEx2Name": "Root and tuber vegetables (excluding starchy- and sugar-)",
+        "level": 3,
+        "parentMatrixCode": "P0210000"
+      },
+      {
+        "matrixCode": "P0220010",
+        "foodEx2Code": "A00GY",
+        "foodEx2Name": "Garlic and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0220000"
+      },
+      {
+        "matrixCode": "P0220020",
+        "foodEx2Code": "A00HB",
+        "foodEx2Name": "Onions and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0220000"
+      },
+      {
+        "matrixCode": "P0220030",
+        "foodEx2Code": "A0DNB",
+        "foodEx2Name": "Shallots and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0220000"
+      },
+      {
+        "matrixCode": "P0220040",
+        "foodEx2Code": "A00HG",
+        "foodEx2Name": "Spring onions and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0220000"
+      },
+      {
+        "matrixCode": "P0231000",
+        "foodEx2Code": "A00HP",
+        "foodEx2Name": "Solanacea",
+        "level": 3,
+        "parentMatrixCode": "P0230000"
+      },
+      {
+        "matrixCode": "P0232000",
+        "foodEx2Code": "A00JL",
+        "foodEx2Name": "Cucurbits with edible peel",
+        "level": 3,
+        "parentMatrixCode": "P0230000"
+      },
+      {
+        "matrixCode": "P0233000",
+        "foodEx2Code": "A00KD",
+        "foodEx2Name": "Cucurbits with inedible peel",
+        "level": 3,
+        "parentMatrixCode": "P0230000"
+      },
+      {
+        "matrixCode": "P0234000",
+        "foodEx2Code": "A0DLP",
+        "foodEx2Name": "Sweet corn and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0230000"
+      },
+      {
+        "matrixCode": "P0241000",
+        "foodEx2Code": "A00FL",
+        "foodEx2Name": "Flowering brassica",
+        "level": 3,
+        "parentMatrixCode": "P0240000"
+      },
+      {
+        "matrixCode": "P0242000",
+        "foodEx2Code": "A00FT",
+        "foodEx2Name": "Head brassica",
+        "level": 3,
+        "parentMatrixCode": "P0240000"
+      },
+      {
+        "matrixCode": "P0243000",
+        "foodEx2Code": "A00GE",
+        "foodEx2Name": "Leafy brassica",
+        "level": 3,
+        "parentMatrixCode": "P0240000"
+      },
+      {
+        "matrixCode": "P0244000",
+        "foodEx2Code": "A04RA",
+        "foodEx2Name": "Kohlrabies and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0240000"
+      },
+      {
+        "matrixCode": "P0251000",
+        "foodEx2Code": "A00KS",
+        "foodEx2Name": "Lettuces and salad plants",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0252000",
+        "foodEx2Code": "A00MG",
+        "foodEx2Name": "Spinach-type leaves",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0253000",
+        "foodEx2Code": "A0DJQ",
+        "foodEx2Name": "Grape leaves and similar species",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0254000",
+        "foodEx2Code": "A00NC",
+        "foodEx2Name": "Watercresses and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0255000",
+        "foodEx2Code": "A0DJL",
+        "foodEx2Name": "Witloofs and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0256000",
+        "foodEx2Code": "A00VQ",
+        "foodEx2Name": "Herbs and edible flowers",
+        "level": 3,
+        "parentMatrixCode": "P0250000"
+      },
+      {
+        "matrixCode": "P0260010",
+        "foodEx2Code": "A00PC",
+        "foodEx2Name": "Beans (with pods) and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0260000"
+      },
+      {
+        "matrixCode": "P0260020",
+        "foodEx2Code": "A011Z",
+        "foodEx2Name": "Beans (fresh seeds without pods) and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0260000"
+      },
+      {
+        "matrixCode": "P0260030",
+        "foodEx2Code": "A00PX",
+        "foodEx2Name": "Peas (with pods) and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0260000"
+      },
+      {
+        "matrixCode": "P0260040",
+        "foodEx2Code": "A012G",
+        "foodEx2Name": "Peas (without pods) and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0260000"
+      },
+      {
+        "matrixCode": "P0270010",
+        "foodEx2Code": "A0DEV",
+        "foodEx2Name": "Asparagus and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270020",
+        "foodEx2Code": "A0DES",
+        "foodEx2Name": "Cardoons and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270030",
+        "foodEx2Code": "A0DEQ",
+        "foodEx2Name": "Celeries and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270040",
+        "foodEx2Code": "A0DEP",
+        "foodEx2Name": "Florence fennels and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270050",
+        "foodEx2Code": "A0DEN",
+        "foodEx2Name": "Globe artichokes and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270060",
+        "foodEx2Code": "A0DEH",
+        "foodEx2Name": "Leeks and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270070",
+        "foodEx2Code": "A0DEG",
+        "foodEx2Name": "Rhubarbs and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270080",
+        "foodEx2Code": "A0DEF",
+        "foodEx2Name": "Bamboo shoots and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0270090",
+        "foodEx2Code": "A0DEC",
+        "foodEx2Name": "Palm hearts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0270000"
+      },
+      {
+        "matrixCode": "P0280010",
+        "foodEx2Code": "A00TP",
+        "foodEx2Name": "Cultivated fungi and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0280000"
+      },
+      {
+        "matrixCode": "P0280020",
+        "foodEx2Code": "A00TD",
+        "foodEx2Name": "Wild fungi and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0280000"
+      },
+      {
+        "matrixCode": "P0401010",
+        "foodEx2Code": "A0DBT",
+        "foodEx2Name": "Linseeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401020",
+        "foodEx2Code": "A0DBS",
+        "foodEx2Name": "Peanuts and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401030",
+        "foodEx2Code": "A0DBR",
+        "foodEx2Name": "Poppy seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401040",
+        "foodEx2Code": "A0DBQ",
+        "foodEx2Name": "Sesame seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401050",
+        "foodEx2Code": "A0DBP",
+        "foodEx2Name": "Sunflower seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401060",
+        "foodEx2Code": "A04KG",
+        "foodEx2Name": "Rapeseeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401070",
+        "foodEx2Code": "A0DBM",
+        "foodEx2Name": "Soyabeans and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401080",
+        "foodEx2Code": "A015Q",
+        "foodEx2Name": "Mustard seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401100",
+        "foodEx2Code": "A0CGF",
+        "foodEx2Name": "Pumpkin seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401110",
+        "foodEx2Code": "A0DBD",
+        "foodEx2Name": "Safflower seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401140",
+        "foodEx2Code": "A0DAS",
+        "foodEx2Name": "Hemp seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0401150",
+        "foodEx2Code": "A0DAP",
+        "foodEx2Name": "Castor beans and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0401000"
+      },
+      {
+        "matrixCode": "P0402010",
+        "foodEx2Code": "A0DAM",
+        "foodEx2Name": "Olives for oil production and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0402000"
+      },
+      {
+        "matrixCode": "P0402020",
+        "foodEx2Code": "A0DAL",
+        "foodEx2Name": "Oil palms kernels and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0402000"
+      },
+      {
+        "matrixCode": "P0402030",
+        "foodEx2Code": "A0DAD",
+        "foodEx2Name": "Oil palms fruits and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0402000"
+      },
+      {
+        "matrixCode": "P0500020-000",
+        "foodEx2Code": "A000N",
+        "foodEx2Name": "Buckwheat",
+        "level": 3,
+        "parentMatrixCode": "P0500020"
+      },
+      {
+        "matrixCode": "P0500020-005",
+        "foodEx2Code": "A000R",
+        "foodEx2Name": "Quinoa grain",
+        "level": 3,
+        "parentMatrixCode": "P0500020"
+      },
+      {
+        "matrixCode": "P0500060-000",
+        "foodEx2Code": "A001D",
+        "foodEx2Name": "Rice grain",
+        "level": 3,
+        "parentMatrixCode": "P0500060"
+      },
+      {
+        "matrixCode": "P0500060-003",
+        "foodEx2Code": "A001J",
+        "foodEx2Name": "Indian rice grain",
+        "level": 3,
+        "parentMatrixCode": "P0500060"
+      },
+      {
+        "matrixCode": "P0500090-000",
+        "foodEx2Code": "A001N",
+        "foodEx2Name": "Common wheat grain",
+        "level": 3,
+        "parentMatrixCode": "P0500090"
+      },
+      {
+        "matrixCode": "P0500090-001",
+        "foodEx2Code": "A001P",
+        "foodEx2Name": "Durum wheat grain",
+        "level": 3,
+        "parentMatrixCode": "P0500090"
+      },
+      {
+        "matrixCode": "P0500090-005",
+        "foodEx2Code": "A001R",
+        "foodEx2Name": "Spelt grain",
+        "level": 3,
+        "parentMatrixCode": "P0500090"
+      },
+      {
+        "matrixCode": "P0810010",
+        "foodEx2Code": "A0CZF",
+        "foodEx2Name": "Anise seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810020",
+        "foodEx2Code": "A0CZE",
+        "foodEx2Name": "Black caraway seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810040",
+        "foodEx2Code": "A0CGQ",
+        "foodEx2Name": "Coriander seeds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810050",
+        "foodEx2Code": "A0CZA",
+        "foodEx2Name": "Cumin seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810070",
+        "foodEx2Code": "A0CYY",
+        "foodEx2Name": "Fennel seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810080",
+        "foodEx2Code": "A0CYT",
+        "foodEx2Name": "Fenugreek seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0810090",
+        "foodEx2Code": "A0CYS",
+        "foodEx2Name": "Nutmeg seed and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0810000"
+      },
+      {
+        "matrixCode": "P0820010",
+        "foodEx2Code": "A0CYP",
+        "foodEx2Name": "Allspice fruit and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0820030",
+        "foodEx2Code": "A0CGS",
+        "foodEx2Name": "Caraway fruit and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0820040",
+        "foodEx2Code": "A0CGT",
+        "foodEx2Name": "Cardamom fruit and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0820050",
+        "foodEx2Code": "A0CYL",
+        "foodEx2Name": "Juniper berry and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0820060",
+        "foodEx2Code": "A018Y",
+        "foodEx2Name": "Peppercorn (black, green and white) and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0820070",
+        "foodEx2Code": "A0CGV",
+        "foodEx2Name": "Vanilla and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0820000"
+      },
+      {
+        "matrixCode": "P0850010",
+        "foodEx2Code": "A0CYA",
+        "foodEx2Name": "Cloves buds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0850000"
+      },
+      {
+        "matrixCode": "P0850020",
+        "foodEx2Code": "A0CHA",
+        "foodEx2Name": "Capers buds and similar-",
+        "level": 3,
+        "parentMatrixCode": "P0850000"
+      },
+      {
+        "matrixCode": "P0900020-000",
+        "foodEx2Code": "A010V",
+        "foodEx2Name": "Sugar canes",
+        "level": 3,
+        "parentMatrixCode": "P0900020"
+      },
+      {
+        "matrixCode": "P0900020-001",
+        "foodEx2Code": "A0CXN",
+        "foodEx2Name": "Agave leaves",
+        "level": 3,
+        "parentMatrixCode": "P0900020"
+      },
+      {
+        "matrixCode": "P1011000",
+        "foodEx2Code": "A049Z",
+        "foodEx2Name": "Pig meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1012000",
+        "foodEx2Code": "A049P",
+        "foodEx2Name": "Bovine meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1013000",
+        "foodEx2Code": "A04AH",
+        "foodEx2Name": "Sheep meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1014000",
+        "foodEx2Code": "A04AR",
+        "foodEx2Name": "Goat meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1015000",
+        "foodEx2Code": "A04HP",
+        "foodEx2Name": "Equine meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1016000",
+        "foodEx2Code": "A04DF",
+        "foodEx2Name": "Poultry meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1017000",
+        "foodEx2Code": "A04HQ",
+        "foodEx2Name": "Other farmed terrestrial animals meat food",
+        "level": 3,
+        "parentMatrixCode": "P1010000"
+      },
+      {
+        "matrixCode": "P1020010",
+        "foodEx2Code": "A04HG",
+        "foodEx2Name": "Cattle milk",
+        "level": 3,
+        "parentMatrixCode": "P1020000"
+      },
+      {
+        "matrixCode": "P1020020",
+        "foodEx2Code": "A02HH",
+        "foodEx2Name": "Ovine milk",
+        "level": 3,
+        "parentMatrixCode": "P1020000"
+      },
+      {
+        "matrixCode": "P1020030",
+        "foodEx2Code": "A02MB",
+        "foodEx2Name": "Goat milk",
+        "level": 3,
+        "parentMatrixCode": "P1020000"
+      },
+      {
+        "matrixCode": "P0110010-000",
+        "foodEx2Code": "A01CY",
+        "foodEx2Name": "Grapefruits",
+        "level": 4,
+        "parentMatrixCode": "P0110010"
+      },
+      {
+        "matrixCode": "P0110010-002",
+        "foodEx2Code": "A01CZ",
+        "foodEx2Name": "Shaddocks",
+        "level": 4,
+        "parentMatrixCode": "P0110010"
+      },
+      {
+        "matrixCode": "P0120010-000",
+        "foodEx2Code": "A014D",
+        "foodEx2Name": "Almonds",
+        "level": 4,
+        "parentMatrixCode": "P0120010"
+      },
+      {
+        "matrixCode": "P0120010-002",
+        "foodEx2Code": "A014E",
+        "foodEx2Name": "Bitter almonds",
+        "level": 4,
+        "parentMatrixCode": "P0120010"
+      },
+      {
+        "matrixCode": "P0140020-000",
+        "foodEx2Code": "A01GK",
+        "foodEx2Name": "Cherries (sweet)",
+        "level": 4,
+        "parentMatrixCode": "P0140020"
+      },
+      {
+        "matrixCode": "P0140020-006",
+        "foodEx2Code": "A01GH",
+        "foodEx2Name": "Sour cherries",
+        "level": 4,
+        "parentMatrixCode": "P0140020"
+      },
+      {
+        "matrixCode": "P0140040-000",
+        "foodEx2Code": "A01GQ",
+        "foodEx2Name": "Plums",
+        "level": 4,
+        "parentMatrixCode": "P0140040"
+      },
+      {
+        "matrixCode": "P0140040-006",
+        "foodEx2Code": "A01GR",
+        "foodEx2Name": "Damsons",
+        "level": 4,
+        "parentMatrixCode": "P0140040"
+      },
+      {
+        "matrixCode": "P0140040-007",
+        "foodEx2Code": "A01GX",
+        "foodEx2Name": "Gages",
+        "level": 4,
+        "parentMatrixCode": "P0140040"
+      },
+      {
+        "matrixCode": "P0140040-010",
+        "foodEx2Code": "A01GS",
+        "foodEx2Name": "Mirabelles",
+        "level": 4,
+        "parentMatrixCode": "P0140040"
+      },
+      {
+        "matrixCode": "P0151010",
+        "foodEx2Code": "A0DVE",
+        "foodEx2Name": "Table grapes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0151000"
+      },
+      {
+        "matrixCode": "P0151020",
+        "foodEx2Code": "A0DVC",
+        "foodEx2Name": "Wine grapes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0151000"
+      },
+      {
+        "matrixCode": "P0153010",
+        "foodEx2Code": "A0DTY",
+        "foodEx2Name": "Blackberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0153000"
+      },
+      {
+        "matrixCode": "P0153030",
+        "foodEx2Code": "A01EN",
+        "foodEx2Name": "Raspberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0153000"
+      },
+      {
+        "matrixCode": "P0154010",
+        "foodEx2Code": "A04JJ",
+        "foodEx2Name": "Blueberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154020",
+        "foodEx2Code": "A04JK",
+        "foodEx2Name": "Cranberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154030",
+        "foodEx2Code": "A0DSV",
+        "foodEx2Name": "Currants and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154040",
+        "foodEx2Code": "A01FQ",
+        "foodEx2Name": "Gooseberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154050",
+        "foodEx2Code": "A01FR",
+        "foodEx2Name": "Rose hips and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154070",
+        "foodEx2Code": "A0CFC",
+        "foodEx2Name": "Azaroles and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0154080",
+        "foodEx2Code": "A04JM",
+        "foodEx2Name": "Elderberries and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0154000"
+      },
+      {
+        "matrixCode": "P0161010",
+        "foodEx2Code": "A0DSB",
+        "foodEx2Name": "Dates and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0161000"
+      },
+      {
+        "matrixCode": "P0161020",
+        "foodEx2Code": "A0DRY",
+        "foodEx2Name": "Figs and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0161000"
+      },
+      {
+        "matrixCode": "P0161030",
+        "foodEx2Code": "A01HH",
+        "foodEx2Name": "Table olives and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0161000"
+      },
+      {
+        "matrixCode": "P0161060",
+        "foodEx2Code": "A01HP",
+        "foodEx2Name": "Kaki and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0161000"
+      },
+      {
+        "matrixCode": "P0162010",
+        "foodEx2Code": "A0DRG",
+        "foodEx2Name": "Kiwi fruits and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0162000"
+      },
+      {
+        "matrixCode": "P0162020",
+        "foodEx2Code": "A04JP",
+        "foodEx2Name": "Litchis and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0162000"
+      },
+      {
+        "matrixCode": "P0162030",
+        "foodEx2Code": "A0DRB",
+        "foodEx2Name": "Passionfruits and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0162000"
+      },
+      {
+        "matrixCode": "P0162040",
+        "foodEx2Code": "A0DQT",
+        "foodEx2Name": "Prickly pears and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0162000"
+      },
+      {
+        "matrixCode": "P0163010",
+        "foodEx2Code": "A0DQP",
+        "foodEx2Name": "Avocados and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163020",
+        "foodEx2Code": "A04JS",
+        "foodEx2Name": "Bananas and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163030",
+        "foodEx2Code": "A0DQF",
+        "foodEx2Name": "Mangoes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163040",
+        "foodEx2Code": "A0DQE",
+        "foodEx2Name": "Papayas and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163050",
+        "foodEx2Code": "A0DQC",
+        "foodEx2Name": "Granate apples and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163060",
+        "foodEx2Code": "A04JT",
+        "foodEx2Name": "Cherimoyas and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163070",
+        "foodEx2Code": "A01LN",
+        "foodEx2Name": "Guavas and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0163080",
+        "foodEx2Code": "A0DPV",
+        "foodEx2Name": "Pineapples and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0163000"
+      },
+      {
+        "matrixCode": "P0212010",
+        "foodEx2Code": "A04JX",
+        "foodEx2Name": "Cassava roots and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0212000"
+      },
+      {
+        "matrixCode": "P0212020",
+        "foodEx2Code": "A0DPH",
+        "foodEx2Name": "Sweet potatoes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0212000"
+      },
+      {
+        "matrixCode": "P0213010",
+        "foodEx2Code": "A0DPC",
+        "foodEx2Name": "Beetroots and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213020",
+        "foodEx2Code": "A0DPB",
+        "foodEx2Name": "Carrots and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213030",
+        "foodEx2Code": "A0DNY",
+        "foodEx2Name": "Celeriacs and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213040",
+        "foodEx2Code": "A04JZ",
+        "foodEx2Name": "Horseradishes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213050",
+        "foodEx2Code": "A0DNV",
+        "foodEx2Name": "Jerusalem artichokes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213060",
+        "foodEx2Code": "A0DNS",
+        "foodEx2Name": "Parsnips and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213070",
+        "foodEx2Code": "A0DNR",
+        "foodEx2Name": "Parsley roots and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213080",
+        "foodEx2Code": "A00QT",
+        "foodEx2Name": "Radishes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213090",
+        "foodEx2Code": "A04KA",
+        "foodEx2Name": "Salsifies and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213100",
+        "foodEx2Code": "A0DNH",
+        "foodEx2Name": "Swedes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0213110",
+        "foodEx2Code": "A0DNG",
+        "foodEx2Name": "Turnips and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0213000"
+      },
+      {
+        "matrixCode": "P0231010",
+        "foodEx2Code": "A00HQ",
+        "foodEx2Name": "Tomatoes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0231000"
+      },
+      {
+        "matrixCode": "P0231020",
+        "foodEx2Code": "A00HZ",
+        "foodEx2Name": "Peppers and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0231000"
+      },
+      {
+        "matrixCode": "P0231030",
+        "foodEx2Code": "A00JC",
+        "foodEx2Name": "Aubergines and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0231000"
+      },
+      {
+        "matrixCode": "P0232010",
+        "foodEx2Code": "A0DMB",
+        "foodEx2Name": "Cucumbers and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0232000"
+      },
+      {
+        "matrixCode": "P0232020",
+        "foodEx2Code": "A00JN",
+        "foodEx2Name": "Gherkins and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0232000"
+      },
+      {
+        "matrixCode": "P0232030",
+        "foodEx2Code": "A00JQ",
+        "foodEx2Name": "Courgettes and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0232000"
+      },
+      {
+        "matrixCode": "P0233010",
+        "foodEx2Code": "A00KE",
+        "foodEx2Name": "Melons and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0233000"
+      },
+      {
+        "matrixCode": "P0233020",
+        "foodEx2Code": "A0DLV",
+        "foodEx2Name": "Pumpkins and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0233000"
+      },
+      {
+        "matrixCode": "P0233030",
+        "foodEx2Code": "A0DLQ",
+        "foodEx2Name": "Watermelons and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0233000"
+      },
+      {
+        "matrixCode": "P0241010",
+        "foodEx2Code": "A00FM",
+        "foodEx2Name": "Broccoli and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0241000"
+      },
+      {
+        "matrixCode": "P0241020",
+        "foodEx2Code": "A0DLL",
+        "foodEx2Name": "Cauliflowers and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0241000"
+      },
+      {
+        "matrixCode": "P0242010",
+        "foodEx2Code": "A0DLG",
+        "foodEx2Name": "Brussels sprouts and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0242000"
+      },
+      {
+        "matrixCode": "P0242020",
+        "foodEx2Code": "A00FX",
+        "foodEx2Name": "Head cabbages and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0242000"
+      },
+      {
+        "matrixCode": "P0243010",
+        "foodEx2Code": "A00GF",
+        "foodEx2Name": "Chinese cabbages and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0243000"
+      },
+      {
+        "matrixCode": "P0243020",
+        "foodEx2Code": "A00GL",
+        "foodEx2Name": "Kales and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0243000"
+      },
+      {
+        "matrixCode": "P0251010",
+        "foodEx2Code": "A0DLC",
+        "foodEx2Name": "Lamb's lettuces and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0251020",
+        "foodEx2Code": "A0DLB",
+        "foodEx2Name": "Lettuces and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0251030",
+        "foodEx2Code": "A00LD",
+        "foodEx2Name": "Escaroles and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0251040",
+        "foodEx2Code": "A00SF",
+        "foodEx2Name": "Sprouts, shoots and similar",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0251050",
+        "foodEx2Code": "A0DKQ",
+        "foodEx2Name": "Land cresses and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0251060",
+        "foodEx2Code": "A00LM",
+        "foodEx2Name": "Roman rocket and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0251000"
+      },
+      {
+        "matrixCode": "P0252010",
+        "foodEx2Code": "A00MH",
+        "foodEx2Name": "Spinaches and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0252000"
+      },
+      {
+        "matrixCode": "P0252030",
+        "foodEx2Code": "A0DJT",
+        "foodEx2Name": "Chards and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0252000"
+      },
+      {
+        "matrixCode": "P0256010",
+        "foodEx2Code": "A0DJJ",
+        "foodEx2Name": "Chervil and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256020",
+        "foodEx2Code": "A00XC",
+        "foodEx2Name": "Chives and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256030",
+        "foodEx2Code": "A04KB",
+        "foodEx2Name": "Celery leaves and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256040",
+        "foodEx2Code": "A0DHZ",
+        "foodEx2Name": "Parsley and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256050",
+        "foodEx2Code": "A0DHX",
+        "foodEx2Name": "Sage and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256060",
+        "foodEx2Code": "A0DHQ",
+        "foodEx2Name": "Rosemary and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256070",
+        "foodEx2Code": "A04KD",
+        "foodEx2Name": "Thyme and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256080",
+        "foodEx2Code": "A04KE",
+        "foodEx2Name": "Basil and edible flowers and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256090",
+        "foodEx2Code": "A0DGE",
+        "foodEx2Name": "Laurel and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0256100",
+        "foodEx2Code": "A04KF",
+        "foodEx2Name": "Tarragon and similar-",
+        "level": 4,
+        "parentMatrixCode": "P0256000"
+      },
+      {
+        "matrixCode": "P0280010-001",
+        "foodEx2Code": "A00TQ",
+        "foodEx2Name": "Common mushrooms",
+        "level": 4,
+        "parentMatrixCode": "P0280010"
+      },
+      {
+        "matrixCode": "P0280010-008",
+        "foodEx2Code": "A0DDN",
+        "foodEx2Name": "Pleurotus",
+        "level": 4,
+        "parentMatrixCode": "P0280010"
+      },
+      {
+        "matrixCode": "P0280010-011",
+        "foodEx2Code": "A00TS",
+        "foodEx2Name": "Shiitake",
+        "level": 4,
+        "parentMatrixCode": "P0280010"
+      },
+      {
+        "matrixCode": "P0280020-001",
+        "foodEx2Code": "A00TG",
+        "foodEx2Name": "Ceps",
+        "level": 4,
+        "parentMatrixCode": "P0280020"
+      },
+      {
+        "matrixCode": "P0280020-002",
+        "foodEx2Code": "A00TE",
+        "foodEx2Name": "Chanterelles",
+        "level": 4,
+        "parentMatrixCode": "P0280020"
+      },
+      {
+        "matrixCode": "P0280020-005",
+        "foodEx2Code": "A00TK",
+        "foodEx2Name": "Morels",
+        "level": 4,
+        "parentMatrixCode": "P0280020"
+      },
+      {
+        "matrixCode": "P0280020-990",
+        "foodEx2Code": "A0DCY",
+        "foodEx2Name": "Other wild fungi",
+        "level": 4,
+        "parentMatrixCode": "P0280020"
+      },
+      {
+        "matrixCode": "P1011010",
+        "foodEx2Code": "A01RG",
+        "foodEx2Name": "Pig fresh meat",
+        "level": 4,
+        "parentMatrixCode": "P1011000"
+      },
+      {
+        "matrixCode": "P1011020",
+        "foodEx2Code": "A01VA",
+        "foodEx2Name": "Pig fat tissue",
+        "level": 4,
+        "parentMatrixCode": "P1011000"
+      },
+      {
+        "matrixCode": "P1011030",
+        "foodEx2Code": "A01XJ",
+        "foodEx2Name": "Pig liver",
+        "level": 4,
+        "parentMatrixCode": "P1011000"
+      },
+      {
+        "matrixCode": "P1011040",
+        "foodEx2Code": "A01YM",
+        "foodEx2Name": "Pig kidney",
+        "level": 4,
+        "parentMatrixCode": "P1011000"
+      },
+      {
+        "matrixCode": "P1011050",
+        "foodEx2Code": "A01ZP",
+        "foodEx2Name": "Pig edible offal, non-muscle, other than liver and kidney",
+        "level": 4,
+        "parentMatrixCode": "P1011000"
+      },
+      {
+        "matrixCode": "P1012010",
+        "foodEx2Code": "A01QV",
+        "foodEx2Name": "Bovine fresh meat",
+        "level": 4,
+        "parentMatrixCode": "P1012000"
+      },
+      {
+        "matrixCode": "P1012020",
+        "foodEx2Code": "A01TX",
+        "foodEx2Name": "Bovine fat tissue",
+        "level": 4,
+        "parentMatrixCode": "P1012000"
+      },
+      {
+        "matrixCode": "P1012030",
+        "foodEx2Code": "A01XF",
+        "foodEx2Name": "Bovine liver",
+        "level": 4,
+        "parentMatrixCode": "P1012000"
+      },
+      {
+        "matrixCode": "P1012040",
+        "foodEx2Code": "A01YJ",
+        "foodEx2Name": "Bovine kidney",
+        "level": 4,
+        "parentMatrixCode": "P1012000"
+      },
+      {
+        "matrixCode": "P1012050",
+        "foodEx2Code": "A01ZM",
+        "foodEx2Name": "Bovine edible offal, non-muscle, other than liver and kidney",
+        "level": 4,
+        "parentMatrixCode": "P1012000"
+      },
+      {
+        "matrixCode": "P1013010",
+        "foodEx2Code": "A01RH",
+        "foodEx2Name": "Sheep fresh meat",
+        "level": 4,
+        "parentMatrixCode": "P1013000"
+      },
+      {
+        "matrixCode": "P1013030",
+        "foodEx2Code": "A01XK",
+        "foodEx2Name": "Sheep liver",
+        "level": 4,
+        "parentMatrixCode": "P1013000"
+      },
+      {
+        "matrixCode": "P1013040",
+        "foodEx2Code": "A01YN",
+        "foodEx2Name": "Sheep kidney",
+        "level": 4,
+        "parentMatrixCode": "P1013000"
+      },
+      {
+        "matrixCode": "P1013050",
+        "foodEx2Code": "A01ZQ",
+        "foodEx2Name": "Sheep edible offal, non-muscle, other than liver and kidney",
+        "level": 4,
+        "parentMatrixCode": "P1013000"
+      },
+      {
+        "matrixCode": "P1016010",
+        "foodEx2Code": "A01SN",
+        "foodEx2Name": "Poultry fresh meat (muscle meat)",
+        "level": 4,
+        "parentMatrixCode": "P1016000"
+      },
+      {
+        "matrixCode": "P1016020",
+        "foodEx2Code": "A01VQ",
+        "foodEx2Name": "Poultry fat tissue",
+        "level": 4,
+        "parentMatrixCode": "P1016000"
+      },
+      {
+        "matrixCode": "P1016030",
+        "foodEx2Code": "A01XY",
+        "foodEx2Name": "Poultry liver",
+        "level": 4,
+        "parentMatrixCode": "P1016000"
+      },
+      {
+        "matrixCode": "P1016050",
+        "foodEx2Code": "A020E",
+        "foodEx2Name": "Poultry edible offal, non-muscle, other than liver and kidney",
+        "level": 4,
+        "parentMatrixCode": "P1016000"
+      },
+      {
+        "matrixCode": "P0154010-000",
+        "foodEx2Code": "A01EY",
+        "foodEx2Name": "Blueberries",
+        "level": 5,
+        "parentMatrixCode": "P0154010"
+      },
+      {
+        "matrixCode": "P0154010-005",
+        "foodEx2Code": "A01FF",
+        "foodEx2Name": "Bilberries (European blueberries)",
+        "level": 5,
+        "parentMatrixCode": "P0154010"
+      },
+      {
+        "matrixCode": "P0154010-015",
+        "foodEx2Code": "A01FK",
+        "foodEx2Name": "Cowberries",
+        "level": 5,
+        "parentMatrixCode": "P0154010"
+      },
+      {
+        "matrixCode": "P0154010-018",
+        "foodEx2Code": "A01FZ",
+        "foodEx2Name": "Sea buckthorns",
+        "level": 5,
+        "parentMatrixCode": "P0154010"
+      },
+      {
+        "matrixCode": "P0154020-000",
+        "foodEx2Code": "A01FH",
+        "foodEx2Name": "Cranberries",
+        "level": 5,
+        "parentMatrixCode": "P0154020"
+      },
+      {
+        "matrixCode": "P0154020-001",
+        "foodEx2Code": "A01EM",
+        "foodEx2Name": "Cloudberries",
+        "level": 5,
+        "parentMatrixCode": "P0154020"
+      },
+      {
+        "matrixCode": "P0213040-000",
+        "foodEx2Code": "A00QK",
+        "foodEx2Name": "Horseradish roots",
+        "level": 5,
+        "parentMatrixCode": "P0213040"
+      },
+      {
+        "matrixCode": "P0213040-006",
+        "foodEx2Code": "A01AB",
+        "foodEx2Name": "Ginger roots",
+        "level": 5,
+        "parentMatrixCode": "P0213040"
+      },
+      {
+        "matrixCode": "P0231010-000",
+        "foodEx2Code": "A0DMX",
+        "foodEx2Name": "Tomatoes",
+        "level": 5,
+        "parentMatrixCode": "P0231010"
+      },
+      {
+        "matrixCode": "P0231010-001",
+        "foodEx2Code": "A0DMV",
+        "foodEx2Name": "Alkekengi",
+        "level": 5,
+        "parentMatrixCode": "P0231010"
+      },
+      {
+        "matrixCode": "P0231020-000",
+        "foodEx2Code": "A00JA",
+        "foodEx2Name": "Sweet peppers",
+        "level": 5,
+        "parentMatrixCode": "P0231020"
+      },
+      {
+        "matrixCode": "P0231020-001",
+        "foodEx2Code": "A00JB",
+        "foodEx2Name": "Chili peppers",
+        "level": 5,
+        "parentMatrixCode": "P0231020"
+      },
+      {
+        "matrixCode": "P0251020-001",
+        "foodEx2Code": "A00KZ",
+        "foodEx2Name": "Crisp lettuces",
+        "level": 5,
+        "parentMatrixCode": "P0251020"
+      },
+      {
+        "matrixCode": "P0251020-003",
+        "foodEx2Code": "A00KY",
+        "foodEx2Name": "Head lettuces",
+        "level": 5,
+        "parentMatrixCode": "P0251020"
+      },
+      {
+        "matrixCode": "P0251040-000",
+        "foodEx2Code": "A00LK",
+        "foodEx2Name": "Cresses",
+        "level": 5,
+        "parentMatrixCode": "P0251040"
+      },
+      {
+        "matrixCode": "P0251040-001",
+        "foodEx2Code": "A00SH",
+        "foodEx2Name": "Alfalfa sprouts",
+        "level": 5,
+        "parentMatrixCode": "P0251040"
+      },
+      {
+        "matrixCode": "P0251040-006",
+        "foodEx2Code": "A00SR",
+        "foodEx2Name": "Mung bean sprouts",
+        "level": 5,
+        "parentMatrixCode": "P0251040"
+      },
+      {
+        "matrixCode": "P0256030-000",
+        "foodEx2Code": "A00XA",
+        "foodEx2Name": "Celery leaves",
+        "level": 5,
+        "parentMatrixCode": "P0256030"
+      },
+      {
+        "matrixCode": "P0256030-004",
+        "foodEx2Code": "A00XF",
+        "foodEx2Name": "Coriander leaves",
+        "level": 5,
+        "parentMatrixCode": "P0256030"
+      },
+      {
+        "matrixCode": "P0256030-006",
+        "foodEx2Code": "A00XH",
+        "foodEx2Name": "Dill leaves",
+        "level": 5,
+        "parentMatrixCode": "P0256030"
+      },
+      {
+        "matrixCode": "P0256030-010",
+        "foodEx2Code": "A00XS",
+        "foodEx2Name": "Lovage leaves",
+        "level": 5,
+        "parentMatrixCode": "P0256030"
+      },
+      {
+        "matrixCode": "P0256030-015",
+        "foodEx2Code": "A00MT",
+        "foodEx2Name": "Garden sorrel",
+        "level": 5,
+        "parentMatrixCode": "P0256030"
+      },
+      {
+        "matrixCode": "P0256070-000",
+        "foodEx2Code": "A00YQ",
+        "foodEx2Name": "Thyme",
+        "level": 5,
+        "parentMatrixCode": "P0256070"
+      },
+      {
+        "matrixCode": "P0256070-005",
+        "foodEx2Code": "A00XX",
+        "foodEx2Name": "Marjoram",
+        "level": 5,
+        "parentMatrixCode": "P0256070"
+      },
+      {
+        "matrixCode": "P0256070-007",
+        "foodEx2Code": "A00XV",
+        "foodEx2Name": "Oregano",
+        "level": 5,
+        "parentMatrixCode": "P0256070"
+      },
+      {
+        "matrixCode": "P0256070-010",
+        "foodEx2Code": "A00YK",
+        "foodEx2Name": "Winter savory",
+        "level": 5,
+        "parentMatrixCode": "P0256070"
+      },
+      {
+        "matrixCode": "P0256080-000",
+        "foodEx2Code": "A00VV",
+        "foodEx2Name": "Basil",
+        "level": 5,
+        "parentMatrixCode": "P0256080"
+      },
+      {
+        "matrixCode": "P0256100-000",
+        "foodEx2Code": "A00YP",
+        "foodEx2Name": "Tarragon",
+        "level": 5,
+        "parentMatrixCode": "P0256100"
+      },
+      {
+        "matrixCode": "P0256100-006",
+        "foodEx2Code": "A00PA",
+        "foodEx2Name": "Common nettle",
+        "level": 5,
+        "parentMatrixCode": "P0256100"
+      }
+    ]
+  }

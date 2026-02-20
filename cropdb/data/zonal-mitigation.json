@@ -1,0 +1,334 @@
+{
+    "schema_version": "1.0",
+    "zones": [
+        {
+            "Zone": "Central",
+            "Source": "Central Zone National Requirements (Revision June 2022)",
+            "SourceURL": "https://circabc.europa.eu/ui/group/0b40948d-7247-4819-bbf9-ecca3250d893/library/6f66c6d2-d175-4784-9bcd-35e51abe3def/details",
+            "Records": [
+                {
+                    "Country": "Austria",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "20",
+                    "Maximum Runoff Buffer (m)": "15",
+                    "Maxiumum Nozzle (%)": 95,
+                    "SWAN": true,
+                    "VFSMOD": null,
+                    "Notes": "Max non-spray buffer zone 20 m; max drift reduction by nozzles 95%. Runoff mitigation distances stated: 5 m (40% runoff/erosion reduction) and 15 m (70% runoff, 90% erosion). No drainage mitigation. SWAN accepted.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Belgium",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "Step 3/4 scenarios D3, D4, R1. Step 4 drift (buffer zone and/or drift reducing technique) and runoff (vegetated buffer strip) mitigation accepted, but no maxima stated in the excerpt. Home and Garden use: national drift values; hardened surfaces and railways: calculations with UK's HardSPEC model.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Czech Republic",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": true,
+                    "VFSMOD": null,
+                    "Notes": "FOCUS SW Steps 1–4; relevant scenarios D4 and R1. Step 4 calculated with SWAN. Runoff mitigation: vegetated buffer strips 5/10/15/20 m with stated reduction efficiencies.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Germany",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": false,
+                    "VFSMOD": null,
+                    "Notes": "National PECsw uses EVA (spray drift) and EXPOSIT (runoff/drainage) for a standard ditch; includes volatilisation/deposition where relevant. Mitigation mentioned for PECgw/bank filtration: vegetated filter strips up to 20 m (max). No SWAN indicated; national approach is non-FOCUS for authorisation.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Hungary",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "FOCUS SW Step 1–4 with scenarios D3, D5, R1, R3, R4. No mitigation maxima provided in the excerpt (it refers to an Ecotox sheet for risk mitigation options).",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Luxembourg",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "No feedback provided in the excerpt.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Netherlands",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": false,
+                    "VFSMOD": null,
+                    "Notes": "National surface water assessment uses TOXSWA for a standard ditch for drift (model tailored to NL), currently neglecting runoff, leaching and drainage for agricultural uses. Also references USES/SimpleTreat and a drinking water criterion method. No explicit maxima for buffers/nozzles stated in the excerpt.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Poland",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "100",
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": null,
+                    "Notes": "Relevant scenarios Step 3–4: D3, D4, R1. Step 4 calculated with SWAN. Mitigation: drift buffer zones up to 100 m; drift-reducing nozzles 50/75/90%.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Rep. Ireland",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "20",
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "D4 considered most representative (Step 3–4). Max no-spray buffer zone 20 m using standard nozzles. Drift-reducing nozzles are not considered as an RMM in authorisation (position under review). Runoff: restrictions/conditions for vulnerable areas; vegetative filter strips recommended but RMM based on untreated vegetative filter strips not accepted.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Romania",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": null,
+                    "Notes": "Relevant scenarios Step 3–4: D4, D5, R1, R3, R4. Step 4 calculated with SWAN. Drift buffer maxima: arable 20 m, fruit 50 m (also notes min 15 m to aquatic surface). Runoff/vegetative buffer strip max: arable 20 m, fruit 20 m (sporadic). Nozzles: 50/75/90%.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Slovakia",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": null,
+                    "Notes": "Relevant scenarios Step 3–4: D4, D5, R1. Step 4 calculated with SWAN. Drift buffer maxima: arable 20 m, fruit 50 m. Nozzles: 50/75/90%. Runoff/vegetative buffer strip max: arable 20 m, fruit 20 m (sporadic).",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                },
+                {
+                    "Country": "Slovenia",
+                    "Zone": "Central",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": false,
+                    "VFSMOD": null,
+                    "Notes": "Core assessment: FOCUS SW stated as YES; national authorisation: NO. National approach: drift only using PEC Excel calculator (UK HSE). Drift buffer maxima: 20 m (horizontal boom); 50 m (vineyards/orchards/hops). Drift-reduction nozzles combined with buffers are not an RMM in Slovenia. Runoff not considered at national level.",
+                    "Source": "Central Zone National Requirements (Revision June 2022)"
+                }
+            ]
+        },
+        {
+            "Zone": "Southern",
+            "Source": "Working Document on the Work-sharing of the Southern Zone Member States Under Regulation (EC) 1107/2009 (Revision 8, 27.10.2023)",
+            "SourceURL": "https://circabc.europa.eu/ui/group/0b40948d-7247-4819-bbf9-ecca3250d893/library/339556f9-6aab-4cb5-a6a1-c32922eac7b5/details",
+            "Records": [
+                {
+                    "Country": "Bulgaria",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "50",
+                    "Maxiumum Nozzle (%)": 95,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "Max buffer zone accepted: 30 m (all crops) except pome/stone fruit where 50 m; vegetated filter strip accepted to the same maxima; acceptable drift-reduction nozzles exactly 50%, 75%, 95%.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Croatia",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": 95,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "FOCUS SW scenarios stated as relevant: D2, D3, D4, D5, D6, R1, R2, R3, R4. VFSmod not acceptable. Drift-reduction nozzles up to 95%; risk assessment must also be performed without nozzles.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Cyprus",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "No surface-water mitigation specifics captured in Appendix V extract (section headings present but no values).",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "France",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "Appendix V points to ANSES dossier guidance documents; no numeric maxima stated in the extract.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Greece",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": 95,
+                    "SWAN": true,
+                    "VFSMOD": true,
+                    "Notes": "Max buffer zones: 20 m (field crops/grasslands/non-cultivated land) and 50 m (all other crops). Max vegetative buffer strips 20 m. FOCUS Step 4 accepted. Combination of buffer + drift-reduction nozzles should not exceed 95% overall reduction.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Italy",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "Appendix V points to Italian national surface-water guidance/tables; numeric maxima not extracted from the core SZ doc text. Linked docs were referenced in the Appendix.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Malta",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "EU data requirements and models are accepted; no national specific data requirements required (no numeric maxima stated).",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Portugal",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": null,
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": 75,
+                    "SWAN": null,
+                    "VFSMOD": null,
+                    "Notes": "Surface-water section states drift-reduction nozzles up to 75% and vegetated buffer zones under applicable rules; no maximum buffer distances stated in the extracted text.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                },
+                {
+                    "Country": "Spain",
+                    "Zone": "Southern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "20",
+                    "Maxiumum Nozzle (%)": 50,
+                    "SWAN": null,
+                    "VFSMOD": true,
+                    "Notes": "Surface-water section indicates buffer zones up to 50 m and drift-reducing nozzles; runoff mitigation via vegetated buffer zone of 10 or 20 m per FOCUS L&M. Also references a generic 5 m buffer under SUD and a 50% nozzle mention in EFSA model context.",
+                    "Source": "Southern Zone Steering Committee (Revision 8, 27.10.2023) – Appendix V"
+                }
+            ]
+        },
+        {
+            "Zone": "Northern",
+            "Source": "Northern Zone Guidance Document (2024)",
+            "SourceURL": "https://www.kemi.se/download/18.35ce338719197548f4921885/1725956219553/Northern-Zone-Guidance-Document-2024.pdf",
+            "Records": [
+                {
+                    "Country": "Denmark",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": null,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table shows drift buffers up to 50 m (orchards). Runoff vegetative buffer strip not listed for DK in the table. SWAN used for runoff buffer calculations; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Estonia",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "40",
+                    "Maximum Runoff Buffer (m)": "10",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 40 m and vegetative buffer strip 10 m. Drift-reducing nozzles up to 90%. SWAN used; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Finland",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "10",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 50 m (orchards) and vegetative buffer strip 10 m. Drift-reducing nozzles up to 90%. SWAN used; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Latvia",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "50",
+                    "Maximum Runoff Buffer (m)": "10",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 50 m and vegetative buffer strip 10 m. Drift-reducing nozzles up to 90% are listed in the table. SWAN used; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Lithuania",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "40",
+                    "Maximum Runoff Buffer (m)": "10",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 40 m and vegetative buffer strip 10 m. Drift-reducing nozzles up to 90%. SWAN used; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Norway",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "30",
+                    "Maximum Runoff Buffer (m)": "10",
+                    "Maxiumum Nozzle (%)": 90,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 30 m and vegetative buffer strip 10 m. Drift-reducing nozzles up to 90%. SWAN used; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                },
+                {
+                    "Country": "Sweden",
+                    "Zone": "Northern",
+                    "Maximum Drift Buffer (m)": "20",
+                    "Maximum Runoff Buffer (m)": null,
+                    "Maxiumum Nozzle (%)": 99,
+                    "SWAN": true,
+                    "VFSMOD": false,
+                    "Notes": "Zone mitigation table indicates drift buffers up to 20 m (orchards). Sweden uses Hjälpredan as first option; text states it is equivalent to max fixed spray-free buffer zone 15 m (field crops) or 20 m (orchards). SWAN used where runoff buffers are applied; VFSMOD not accepted.",
+                    "Source": "Northern Zone Guidance Document (2024)"
+                }
+            ]
+        }
+    ]
+}

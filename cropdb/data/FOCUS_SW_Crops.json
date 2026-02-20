@@ -1,0 +1,127 @@
+[
+    {
+      "crop": "Cereals, spring",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Cereals, winter",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Citrus",
+      "bba_crop_grouping": "Fruit crops, late",
+      "default_application_method_in_swash": "Air blast"
+    },
+    {
+      "crop": "Cotton",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Field beans",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Grass/alfalfa",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Hops",
+      "bba_crop_grouping": "Hops",
+      "default_application_method_in_swash": "Air blast"
+    },
+    {
+      "crop": "Legumes",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Maize",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Oil seed rape, spring",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Oil seed rape, winter",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Olives",
+      "bba_crop_grouping": "Fruit crops, late",
+      "default_application_method_in_swash": "Air blast"
+    },
+    {
+      "crop": "Pome/stone fruit, early applications",
+      "bba_crop_grouping": "Fruit crops, early",
+      "default_application_method_in_swash": "Air blast"
+    },
+    {
+      "crop": "Pome/stone fruit, late applications",
+      "bba_crop_grouping": "Fruit crops, late",
+      "default_application_method_in_swash": "Air blast"
+    },
+    {
+      "crop": "Potatoes",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Soybeans",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Sugar beets",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Sunflowers",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Tobacco",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vegetables, bulb",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vegetables, fruiting",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vegetables, leafy",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vegetables, root",
+      "bba_crop_grouping": "Arable crops",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vines, early applications",
+      "bba_crop_grouping": "Vines, early",
+      "default_application_method_in_swash": "Ground spray"
+    },
+    {
+      "crop": "Vines, late applications",
+      "bba_crop_grouping": "Vines, late",
+      "default_application_method_in_swash": "Ground spray"
+    }
+  ]

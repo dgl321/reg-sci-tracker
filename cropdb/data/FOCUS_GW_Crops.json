@@ -1,0 +1,117 @@
+{
+    "title": "FOCUS Groundwater Crops by Scenario Location",
+    "source": "Table 1.3 - Crops included in FOCUS scenarios by location",
+    "locations": {
+      "C": "Châteaudun",
+      "H": "Hamburg",
+      "J": "Jokioinen",
+      "K": "Kremsmünster",
+      "N": "Okehampton",
+      "P": "Piacenza",
+      "O": "Porto",
+      "S": "Sevilla",
+      "T": "Thiva"
+    },
+    "crops": [
+      {
+        "crop": "apples",
+        "scenarios": ["C", "H", "J", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "grass (+ alfalfa)",
+        "scenarios": ["C", "H", "J", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "potatoes",
+        "scenarios": ["C", "H", "J", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "sugar beets",
+        "scenarios": ["C", "H", "J", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "winter cereals",
+        "scenarios": ["C", "H", "J", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "beans (field)",
+        "scenarios": ["C", "K", "N"]
+      },
+      {
+        "crop": "beans (vegetables)",
+        "scenarios": ["O", "S"]
+      },
+      {
+        "crop": "bush berries",
+        "scenarios": ["J"]
+      },
+      {
+        "crop": "cabbage",
+        "scenarios": ["C", "H", "K", "N", "O", "S"]
+      },
+      {
+        "crop": "carrots",
+        "scenarios": ["C", "H", "J", "K", "N", "O", "S", "T"]
+      },
+      {
+        "crop": "citrus",
+        "scenarios": ["N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "cotton",
+        "scenarios": ["P", "S", "T"]
+      },
+      {
+        "crop": "linseed",
+        "scenarios": ["C"]
+      },
+      {
+        "crop": "maize",
+        "scenarios": ["C", "H", "K", "N", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "oilseed rape (summer)",
+        "scenarios": ["J"]
+      },
+      {
+        "crop": "oilseed rape (winter)",
+        "scenarios": ["C", "H", "K", "N"]
+      },
+      {
+        "crop": "onions",
+        "scenarios": ["C", "H", "N", "O", "S", "T"]
+      },
+      {
+        "crop": "peas (animals)",
+        "scenarios": ["C", "H", "P"]
+      },
+      {
+        "crop": "soybean",
+        "scenarios": ["P"]
+      },
+      {
+        "crop": "spring cereals",
+        "scenarios": ["C", "H", "J", "K", "N", "S"]
+      },
+      {
+        "crop": "strawberries",
+        "scenarios": ["C", "H", "K", "N", "S"]
+      },
+      {
+        "crop": "sunflower",
+        "scenarios": ["P", "S"]
+      },
+      {
+        "crop": "tobacco",
+        "scenarios": ["P", "S", "T"]
+      },
+      {
+        "crop": "tomatoes",
+        "scenarios": ["C", "P", "O", "S", "T"]
+      },
+      {
+        "crop": "vines",
+        "scenarios": ["C", "H", "K", "P", "O", "S", "T"]
+      }
+    ]
+  }

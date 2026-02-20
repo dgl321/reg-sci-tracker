@@ -1,0 +1,275 @@
+{
+    "title": "FOCUS Groundwater Crop Interception by Growth Stage",
+    "source": "Table 1.5 - Interception by other crops dependent on growth stage",
+    "notes": [
+      "The BBCH code is indicative (Meier, 2001)",
+      "A value of 90 is used for applications to established turf (Grass)",
+      "BBCH code of 20-29 for tillering and 30-39 for elongation (cereals)"
+    ],
+    "growth_stages": {
+      "bare_emergence": {
+        "description": "Bare - emergence",
+        "bbch_range": "0-09"
+      },
+      "leaf_development": {
+        "description": "Leaf development",
+        "bbch_range": "10-19"
+      },
+      "stem_elongation": {
+        "description": "Stem elongation",
+        "bbch_range": "20-39"
+      },
+      "flowering": {
+        "description": "Flowering",
+        "bbch_range": "40-89"
+      },
+      "senescence_ripening": {
+        "description": "Senescence / Ripening",
+        "bbch_range": "90-99"
+      }
+    },
+    "crops": [
+      {
+        "crop": "beans (field + vegetable)",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 25,
+          "stem_elongation": 40,
+          "flowering": 70,
+          "senescence_ripening": 80
+        }
+      },
+      {
+        "crop": "cabbage",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 25,
+          "stem_elongation": 40,
+          "flowering": 70,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "carrots",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 25,
+          "stem_elongation": 60,
+          "flowering": 80,
+          "senescence_ripening": 80
+        }
+      },
+      {
+        "crop": "cotton",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 30,
+          "stem_elongation": 60,
+          "flowering": 75,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "grass",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 40,
+          "stem_elongation": 60,
+          "flowering": 90,
+          "senescence_ripening": 90
+        },
+        "note": "A value of 90 is used for applications to established turf"
+      },
+      {
+        "crop": "linseed",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 30,
+          "stem_elongation": 60,
+          "flowering": 70,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "maize",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 25,
+          "stem_elongation": 50,
+          "flowering": 75,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "oilseed rape (summer)",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 40,
+          "stem_elongation": 80,
+          "flowering": 80,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "oilseed rape (winter)",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 40,
+          "stem_elongation": 80,
+          "flowering": 80,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "onions",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 10,
+          "stem_elongation": 25,
+          "flowering": 40,
+          "senescence_ripening": 60
+        }
+      },
+      {
+        "crop": "peas",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 35,
+          "stem_elongation": 55,
+          "flowering": 85,
+          "senescence_ripening": 85
+        }
+      },
+      {
+        "crop": "potatoes",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 15,
+          "stem_elongation": 60,
+          "flowering": 85,
+          "senescence_ripening": 50
+        }
+      },
+      {
+        "crop": "soybean",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 35,
+          "stem_elongation": 55,
+          "flowering": 85,
+          "senescence_ripening": 65
+        }
+      },
+      {
+        "crop": "spring cereals",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 0,
+          "stem_elongation": [
+            {
+              "bbch_range": "20-29",
+              "description": "tillering",
+              "value": 20
+            },
+            {
+              "bbch_range": "30-39",
+              "description": "elongation",
+              "value": 80
+            }
+          ],
+          "flowering": [
+            {
+              "bbch_range": "40-69",
+              "value": 90
+            },
+            {
+              "bbch_range": "70-89",
+              "value": 80
+            }
+          ],
+          "senescence_ripening": 80
+        }
+      },
+      {
+        "crop": "strawberries",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 30,
+          "stem_elongation": 50,
+          "flowering": 60,
+          "senescence_ripening": 60
+        }
+      },
+      {
+        "crop": "sugar beets",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 20,
+          "stem_elongation": 70,
+          "stem_elongation_note": "rosette",
+          "flowering": 90,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "sunflower",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 20,
+          "stem_elongation": 50,
+          "flowering": 75,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "tobacco",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 50,
+          "stem_elongation": 70,
+          "flowering": 90,
+          "senescence_ripening": 90
+        }
+      },
+      {
+        "crop": "tomatoes",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 50,
+          "stem_elongation": 70,
+          "flowering": 80,
+          "senescence_ripening": 50
+        }
+      },
+      {
+        "crop": "winter cereals",
+        "interception": {
+          "bare_emergence": 0,
+          "leaf_development": 0,
+          "stem_elongation": [
+            {
+              "bbch_range": "20-29",
+              "description": "tillering",
+              "value": 20
+            },
+            {
+              "bbch_range": "30-39",
+              "description": "elongation",
+              "value": 80
+            }
+          ],
+          "flowering": [
+            {
+              "bbch_range": "40-69",
+              "value": 90
+            },
+            {
+              "bbch_range": "70-89",
+              "value": 80
+            }
+          ],
+          "senescence_ripening": 80
+        }
+      }
+    ]
+  }

@@ -2,7 +2,6 @@
 
 import { useState, use, useRef, useEffect } from "react";
 import Link from "next/link";
-import { getProduct } from "@/lib/mock-data";
 import {
   getRiskDistribution,
   getOverallRisk,
@@ -63,9 +62,8 @@ export default function ProductPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = use(params);
-  const productData = getProduct(id);
 
-  const [product, setProduct] = useState<Product | undefined>(productData);
+  const [product, setProduct] = useState<Product | undefined>(undefined);
   const [activeTab, setActiveTab] = useState<Tab>("summary");
   const [editingSection, setEditingSection] = useState<{
     sectionId: string;
@@ -73,8 +71,17 @@ export default function ProductPage({
     name: string;
   } | null>(null);
   const [editingConclusion, setEditingConclusion] = useState(false);
-  const [conclusionDraft, setConclusionDraft] = useState(productData?.conclusion ?? "");
+  const [conclusionDraft, setConclusionDraft] = useState("");
   const conclusionRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    fetch(`/api/products/${id}`)
+      .then((r) => r.json())
+      .then((data) => {
+        setProduct(data);
+        setConclusionDraft(data.conclusion ?? "");
+      });
+  }, [id]);
 
   if (!product) {
     return (
@@ -119,6 +126,11 @@ export default function ProductPage({
   }
 
   function handleSaveAssessment(data: SectionAssessment) {
+    fetch(`/api/products/${id}/assessments`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
     setProduct((prev) => {
       if (!prev) return prev;
       const existing = prev.assessments.findIndex(
@@ -141,7 +153,16 @@ export default function ProductPage({
   }
 
   function handleSaveConclusion() {
-    setProduct((prev) => prev ? { ...prev, conclusion: conclusionDraft.trim() } : prev);
+    const conclusion = conclusionDraft.trim();
+    setProduct((prev) => {
+      if (!prev) return prev;
+      fetch(`/api/products/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...prev, conclusion }),
+      });
+      return { ...prev, conclusion };
+    });
     setEditingConclusion(false);
   }
 
@@ -151,6 +172,11 @@ export default function ProductPage({
   }
 
   function handleUpdateCountries(countries: CountryUse[]) {
+    fetch(`/api/products/${id}/countries`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(countries),
+    });
     setProduct((prev) => (prev ? { ...prev, countries } : prev));
   }
 
