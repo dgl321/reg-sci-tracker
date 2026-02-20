@@ -17,7 +17,7 @@ const TILE_BG: Record<RiskLevel, string> = {
   "data-required": "bg-yellow-50 dark:bg-yellow-900/30 border-yellow-300 dark:border-yellow-700",
   "refinement-needed": "bg-orange-50 dark:bg-orange-900/30 border-orange-300 dark:border-orange-700",
   critical: "bg-red-50 dark:bg-red-900/30 border-red-300 dark:border-red-700",
-  fail: "bg-gray-100 dark:bg-gray-800 border-gray-500 dark:border-gray-600",
+  fail: "bg-gray-100/60 dark:bg-gray-900/60 backdrop-blur-sm border-gray-900 dark:border-gray-600",
 };
 
 const TILE_DOT: Record<RiskLevel, string> = {

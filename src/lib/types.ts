@@ -44,9 +44,9 @@ export const RISK_LEVEL_CONFIG: Record<
   },
   fail: {
     label: "Fail",
-    color: "text-white dark:text-white",
-    bgColor: "bg-gray-900 dark:bg-gray-950",
-    borderColor: "border-gray-800 dark:border-gray-700",
+    color: "text-gray-900 dark:text-gray-200",
+    bgColor: "bg-gray-100 dark:bg-gray-900",
+    borderColor: "border-gray-900 dark:border-gray-600",
   },
   critical: {
     label: "Critical",
